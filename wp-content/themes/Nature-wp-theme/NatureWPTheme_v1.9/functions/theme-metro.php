@@ -13,6 +13,7 @@ wp_enqueue_style('font', get_template_directory_uri().'/css/font.css', false, fa
 wp_enqueue_style('prettyPhoto', get_template_directory_uri().'/css/prettyPhoto.css', false, false, 'all');
 //wp_enqueue_style('nature_style_light', get_template_directory_uri().'/css/nature_style_light.css', false, false, 'all');
 wp_enqueue_style('component', get_template_directory_uri().'/css/component.css', false, false, 'all');
+wp_enqueue_style('animate', get_template_directory_uri().'/css/animate.css', false, false, 'all');
 }
 add_action('wp_enqueue_scripts', 'theme_mt_styles');
 //Load theme Scripts
