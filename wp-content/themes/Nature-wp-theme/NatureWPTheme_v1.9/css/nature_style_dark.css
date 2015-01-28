@@ -1163,7 +1163,8 @@ ul.social > li a.dribbble:hover {
 }
 
 .contact-info-span {
-	width:296px;
+	width:100%;
+	text-align:center;
 }
 .contact-info-box {
 	background:url(../img/globe.png) no-repeat left 45px;

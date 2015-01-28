@@ -33,7 +33,7 @@ global $page, $paged;
 <body <?php body_class(); ?>>
     
 <!-- Home -->
-    <section id="home" class="home">
+    <section id="home" class="animated fadeIn home">
         <div class="logo">
             <?php if(isset($nature_mt['logo']) && $nature_mt['logo'] != '') { ?>
                 <img src="<?php echo $nature_mt['logo'];?>" alt="Logo">

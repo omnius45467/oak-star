@@ -3,7 +3,7 @@ get_header('mt');
 ?>
 <!-- Blog -->
     <section class="mtblog">
-        <div class="container">           
+        <div class="container">
             <!-- Blog Post's -->
             <div class="row single-blog-post-row">
                 <div class="span12 single-blog-post-span">
