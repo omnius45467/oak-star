@@ -290,7 +290,7 @@ class TZSC_Admin_Insert {
 					// If shortcode has children, it can be cloned and is sortable.
 					// Add a hidden clone template, and set clone button to be displayed.
 					if( array_key_exists('child_shortcode', $shortcode ) ) {
-						$html .= (isset($shortcode['child_shortcode']['shortcode']) ? $shortcode['child_shortcode']['shortcode'] : null);
+						//$html .= $shortcode['child_shortcode']['shortcode'];
 						$shortcode['params'] = $shortcode['child_shortcode']['params'];
 						$clone_button['show'] = true;
 						$clone_button['text'] = $shortcode['child_shortcode']['clone_button'];

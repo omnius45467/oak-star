@@ -40,22 +40,6 @@
 	margin-right: 0 !important;
 }
 
-@media screen and (max-width: 414px) {
-	.zilla-one-half,
-	.zilla-one-third,
-	.zilla-two-third,
-	.zilla-three-fourth,
-	.zilla-one-fourth,
-	.zilla-one-fifth,
-	.zilla-two-fifth,
-	.zilla-three-fifth,
-	.zilla-four-fifth,
-	.zilla-one-sixth,
-	.zilla-five-sixth {
-		width: 96%;
-	}
-}
-
 /*	Button Styles --- */
 
 a.zilla-button,

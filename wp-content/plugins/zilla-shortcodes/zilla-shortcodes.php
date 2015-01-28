@@ -3,7 +3,7 @@
  * Plugin Name: ZillaShortcodes
  * Plugin URI: http://www.themezilla.com/plugins/zillashortcodes
  * Description: A simple shortcode generator. Add buttons, columns, tabs, toggles and alerts to your theme.
- * Version: 2.0.2
+ * Version: 2.0
  * Author: ThemeZilla
  * Author URI: http://www.themezilla.com
  */
