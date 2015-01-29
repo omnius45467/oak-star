@@ -6,6 +6,7 @@ body {
 	font-family:'OpenSansRegular', Arial, sans-serif;
 	line-height:18px;
 	background:#fff;
+	padding:0;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -678,12 +679,14 @@ ul.social > li a.dribbble:hover {
 /* Newsletter
 -------------------------------------------------- */
 .newsletter {
-	margin:70px -20px 0;
+	min-height:400px;
+	margin:100px -20px 0;
 	background:url(../img/newsletter.jpg) repeat center fixed;
 	background-size: cover !important;
 	border-bottom:9px solid #85c63e;
 }
 .newsletter-box {
+
     text-align: center;
 	padding:50px 10px 0px;
 }
@@ -817,7 +820,7 @@ ul.social > li a.dribbble:hover {
 	display:none;
 }
 .portfolio-slider-span .flex-control-paging li a {
-	width: 47px; 
+	width: 200px;
 	height: 10px; 
 	background: #404040; 
 	background: rgba(64,64,64,1); 
@@ -1182,7 +1185,7 @@ ul.social > li a.dribbble:hover {
 	/*background:url(../img/globe.png) no-repeat left 45px;*/
 }
 .contact-info {
-	margin:30px 0 0 30px;
+	margin:30px 0 100px 70px;
 }
 .contact-info a {
 	color:#fff;

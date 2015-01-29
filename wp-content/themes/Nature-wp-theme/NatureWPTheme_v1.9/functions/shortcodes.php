@@ -395,15 +395,17 @@ add_shortcode('h6', 'h6_f');
 	extract( shortcode_atts( array(), $atts));
 	
 	$code = '
-			 <div class="container">
-                <div class="row portfolio-slider-row">
-                    <div class="span12 portfolio-slider-span">
-                        <div class="flexslider">
-                            <ul class="slides">'.do_shortcode($content).'</ul>
-                        </div>
-                    </div>
+
+                <div>
+					<div class="portfolio-slider-row">
+						<div class="portfolio-slider-span">
+							<div class="flexslider">
+								<ul class="slides">'.do_shortcode($content).'</ul>
+							</div>
+						</div>
+					</div>
                 </div>
-            </div>
+
 	';
 	return $code;
 	}
