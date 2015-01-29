@@ -130,6 +130,44 @@ add_shortcode('h6', 'h6_f');
 	}
 	add_shortcode('service', 'm_service');
 
+//Event-ROW
+
+function m_events_row($atts, $content = null) {
+	extract( shortcode_atts( array(), $atts));
+
+	$code = '
+	<div class="container">
+		<div class="row service-row">'.do_shortcode($content).'</div>
+	</div>
+	';
+	return $code;
+}
+
+add_shortcode('events-row', 'm_events_row');
+
+//Events
+function m_events($atts, $content = null) {
+	extract( shortcode_atts( array(
+		"title" => 'SERVICE TITLE',
+		"text" => 'SERVICE DETAILS',
+		"image" => 'SERVICE IMAGE',
+		"url" => 'SERVICE BUTTON URL',
+	),$atts));
+
+	$code = '
+	                <div class="span4 service-span">
+	                    <div class="service-box">
+	                        <img class="img-circle" src="'.$image.'" alt="'.$title.'">
+	                        <h3>'.$title.'</h3>
+	                        <p>'.$text.'</p>
+	                        <a class="btn" href="'.$url.'">Read More</a>
+	                    </div>
+	                </div>
+				';
+	return $code;
+}
+add_shortcode('events', 'm_events');
+
 //OTHER SERVICE-ROW 
 
 	function m_o_service_row($atts, $content = null) {
