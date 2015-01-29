@@ -21,15 +21,7 @@
                 <?php if(isset($nature_mt['rss_url']) && $nature_mt['rss_url'] != '') { ?>
                         <li><a class="rss" href="<?php echo $nature_mt['rss_url'];?>">RSS</a></li>
 
-                <?php } ?> 
-                <?php if(isset($nature_mt['forrst_url']) && $nature_mt['forrst_url'] != '') { ?>
-                        <li><a class="forrst" href="<?php echo $nature_mt['forrst_url'];?>">Forrst</a></li>
-
-                <?php } ?> 
-                <?php if(isset($nature_mt['dribble_url']) && $nature_mt['dribble_url'] != '') { ?>
-                        <li><a class="dribbble" href="<?php echo $nature_mt['dribble_url'];?>">Dribbble</a></li>
-
-                <?php } ?> 
+                <?php } ?>
                     </ul>
                     <!-- Footer Social Icon end -->
                 </div>
