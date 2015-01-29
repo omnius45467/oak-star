@@ -122,7 +122,6 @@ add_shortcode('h6', 'h6_f');
 	                        <img class="img-circle" src="'.$image.'" alt="'.$title.'">
 	                        <h3>'.$title.'</h3>
 	                        <p>'.$text.'</p>
-	                        <a class="btn" href="'.$url.'">Read More</a>
 	                    </div>
 	                </div>					
 				';
@@ -160,7 +159,7 @@ function m_events($atts, $content = null) {
 	                        <img class="img-circle" src="'.$image.'" alt="'.$title.'">
 	                        <h3>'.$title.'</h3>
 	                        <p>'.$text.'</p>
-	                        <a class="btn" href="'.$url.'">Read More</a>
+	                        <a class="btn" href="'.$url.'">Download Entry Form</a>
 	                    </div>
 	                </div>
 				';
@@ -426,6 +425,19 @@ add_shortcode('events', 'm_events');
 		require (get_template_directory() . '/functions/m-newsletter.php');
 	}
 
+//parallax-section
+
+add_shortcode('parallax', 'mt_parallax');
+
+function mt_parallax($atts=array()) {
+	ob_start();
+	mt_parallax_content($atts);
+	$content = ob_get_clean();
+	return $content;
+}
+function mt_parallax_content($atts=array()) {
+	require (get_template_directory() . '/functions/m-parallax.php');
+}
 
 
 //Slider ShortCode
