@@ -101,6 +101,12 @@ a:hover {
 	margin:0;
 }
 
+.fa{
+	color:#000;
+	
+}
+
+
 ul.social {
 	list-style: none;
 	margin: 0px;
@@ -1019,7 +1025,8 @@ ul.social > li a.dribbble:hover {
 	padding-bottom:104px;
 }
 .contact {
-	background:url(../img/contact-us-box.jpg) repeat center fixed;
+	
+	background: url(../img/contact-us-box.jpg) repeat center fixed;
 	background-size: cover !important;
 	padding:130px 0 55px;
 	margin-bottom: 100px;
@@ -1029,6 +1036,7 @@ ul.social > li a.dribbble:hover {
 	padding:130px 0 55px;
 }
 .contact-row {
+	color:#000;
 	padding:0 122px;
 }
 .contact .section-title h2 span {
@@ -1063,6 +1071,11 @@ ul.social > li a.dribbble:hover {
 	line-height:22px;
 	margin:0;
 	padding-top:14px;
+}
+.contact-centered{
+	margin:10px auto;
+	padding: 10px auto 30px auto;
+	text-align:center;
 }
 
 .send-message-form {
@@ -1162,13 +1175,14 @@ ul.social > li a.dribbble:hover {
 }
 
 .contact-info-span {
-	width:296px;
+	width:263px;
+	text-align:center;
 }
 .contact-info-box {
-	background:url(../img/globe.png) no-repeat left 45px;
+	/*background:url(../img/globe.png) no-repeat left 45px;*/
 }
 .contact-info {
-	margin:170px 0 0 30px;
+	margin:30px 0 0 30px;
 }
 .contact-info a {
 	color:#fff;
@@ -1178,7 +1192,8 @@ ul.social > li a.dribbble:hover {
 	background:url(../img/map-marker.png) no-repeat left top;
 	padding:0 0 35px 45px;
 }
-.map-marker p {
+.map-marker h4 {
+	width:500px;
 	margin:0;
 	padding:10px;
 	color:#386508;
@@ -1188,7 +1203,7 @@ ul.social > li a.dribbble:hover {
 	-moz-border-radius: 10px;
 	-o-border-radius: 10px;
 	border-radius: 10px;
-	text-align:left;
+	/*text-align:center;*/
 }
 
 

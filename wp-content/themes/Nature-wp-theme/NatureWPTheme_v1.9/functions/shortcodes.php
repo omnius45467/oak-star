@@ -241,15 +241,14 @@ add_shortcode('h6', 'h6_f');
                         <ul class="social">';
 
 			            if($team_tw = get_post_meta( $id, '_cmb_tw_link', true )):
-						$teams.= '<li><a class="twitter" href="'.$team_tw.'">Twitter</a></li>';
+						$teams.= '<li><a class="fa fa-twitter-square twitter" href="'.$team_tw.'">Twitter</a></li>';
 						endif;
 			         
 
 			            if($team_fb = get_post_meta( $id, '_cmb_fb_link', true )):
-						$teams.= '<li><a class="facebook" href="'.$team_fb.'">Facebook</a></li>';
-						endif;   
-
-
+						$teams.= '<li><a class="fa fa-facebook-square facebook" href="'.$team_fb.'">Facebook</a></li>';
+						endif;
+			
 						if($team_rss = get_post_meta( $id, '_cmb_rss_link', true )):
 						$teams.= '<li><a class="rss" href="'.$team_rss.'">RSS</a></li>';
 						endif; 
@@ -508,7 +507,7 @@ add_shortcode('portfolio', 'mt_portfolio');
 		$the_query = new WP_Query('post_type=portfolio&posts_per_page=-1');
 		if($the_query->have_posts()) :
 			
-        $projects = '<div class="container"><ul id="og-grid" class="og-grid">';
+        $projects = '<div class="container" id="freewall"><ul id="og-grid" class="og-grid">';
                      
 		while ( $the_query->have_posts() ) : $the_query->the_post();
 		$project_id = get_the_ID();
@@ -520,7 +519,7 @@ add_shortcode('portfolio', 'mt_portfolio');
 		$thumb = wp_get_attachment_image_src( get_post_thumbnail_id($project_id), 'portfolio_limg' );
 		$projects_limage = $thumb['0'];
 		$projects .= '	
-			<li>
+			<li class="animated fadeIn brick">
 				<a href="'.$projects_link.'" data-largesrc="'.$projects_limage.'" data-title="'.$project_title.'" data-description="'.$project_content.'">
 							'.$thumbnail.'
 						</a>
