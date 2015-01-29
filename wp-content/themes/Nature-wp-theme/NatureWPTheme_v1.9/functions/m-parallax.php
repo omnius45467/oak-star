@@ -1,5 +1,5 @@
 <?php global $nature_mt; ?>
-<!-- Newsletter -->
+<!-- Parallax -->
 <section id="newsletter" class="newsletter">
     <div class="container-fluid">
         <div class="row-fluid">
@@ -9,13 +9,8 @@
                         <?php echo $nature_mt['newsletter_text'];?>
                     <?php } ?>
                     <div class="newsletter-form">
-                        <div class="newsletter-form-box">
-                            <p>
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias aliquid asperiores cum, dignissimos ducimus eligendi esse iste mollitia optio perspiciatis placeat quae reiciendis repellat repellendus sapiente similique veniam vitae voluptatibus.
-                            </p>
-                        </div>
-                        <div class="mess center">
-                        </div>
+                            <span class="animated fadeIn"><?php echo do_shortcode( '[video_lightbox_youtube video_id="hn6pSo6ZNZQ" width="100%" height="100%" auto_thumb="1"]' );?></span>
+                            <span class="animated fadeIn"><?php echo do_shortcode( '[video_lightbox_youtube video_id="hn6pSo6ZNZQ" width="100%" height="100%" auto_thumb="1"]' );?></span>
                     </div>
                 </div>
             </div>
