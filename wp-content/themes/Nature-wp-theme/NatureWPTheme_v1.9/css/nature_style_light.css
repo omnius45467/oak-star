@@ -180,6 +180,8 @@ ul.social > li a.dribbble:hover {
 	border-radius: 10px;
 }
 .slider-caption h1{
+
+	margin:auto;
 	padding-top:20px;
 	text-shadow:#222 1px 2px 1px;
 	
