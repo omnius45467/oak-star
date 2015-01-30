@@ -269,7 +269,7 @@ add_shortcode('events', 'm_events');
 			$team_avater = get_post_meta( $id, '_cmb_team_image', true );
  			$team_about = get_post_meta( $id, '_cmb_team_about', true );
 			$teams .= '
-                <div class="span6 about-span">
+                <div class="span12 about-span">
                     <div class="team-box">
                     	<img class="img-circle" src="'.$team_avater.'" alt="'.$team_title.'"/>
                         <h5>'.$team_title.'</h5>
@@ -287,7 +287,7 @@ add_shortcode('events', 'm_events');
 						endif;
 			
 						if($team_rss = get_post_meta( $id, '_cmb_rss_link', true )):
-						$teams.= '<li><a class="rss" href="'.$team_rss.'">RSS</a></li>';
+						$teams.= '<li><a class="rss" href="'.$team_rss.'">Instagram</a></li>';
 						endif;
                                                     
 		          $teams .= ' 	 </ul>
