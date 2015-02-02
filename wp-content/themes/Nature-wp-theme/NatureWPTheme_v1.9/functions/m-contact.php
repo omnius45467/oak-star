@@ -3,13 +3,9 @@
 <div class="container">				
                 <div class="row contact-row">
                     <!-- Contact Info -->
-                    <div class="span12 contact-info-span">
-
-                    </div>
-                    <!-- Contact Info end -->
                     <div class="contact-info-span">
                         <div class="contact-info contact-centered">
-                            <div class="col-sm-12 col-md-12 col-lg-12">
+                            <div>
                                 <?php if(isset($nature_mt['contact_address']) && $nature_mt['contact_address'] != '') { ?>
                                     <div>
                                         <p><?php echo $nature_mt['contact_address'];?></p>
