@@ -98,7 +98,7 @@ add_shortcode('h6', 'h6_f');
 	extract( shortcode_atts( array(), $atts));
 	
 	$code = '
-	<div class="container">
+	<div>
 		<div class="row service-row">'.do_shortcode($content).'</div>
 	</div>
 	';
@@ -260,7 +260,7 @@ add_shortcode('events', 'm_events');
 		$the_query = new WP_Query('post_type=mt_team&posts_per_page=-1');
 		if($the_query->have_posts()) :
 
-		$teams = '<div class="container"><div class="row about-row">';
+		$teams = '<div><div class="row about-row">';
 		//$clients .= '<ul class="thumbnails">';
 		while ( $the_query->have_posts() ) : $the_query->the_post();
 			$id = get_the_ID();

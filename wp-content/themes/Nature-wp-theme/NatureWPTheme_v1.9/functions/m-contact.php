@@ -1,6 +1,6 @@
  <?php global $nature_mt; ?>
                 <!-- Contact Form and Info -->
-<div class="container">				
+<div>
                 <div class="row contact-row">
                     <!-- Contact Info -->
                     <div class="contact-info-span">
