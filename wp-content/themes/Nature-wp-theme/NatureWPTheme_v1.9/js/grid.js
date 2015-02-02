@@ -212,7 +212,7 @@ support = Modernizr.csstransitions,
 // default settings
 settings = {
 minHeight : 460,
-speed : 350,
+speed : 750,
 easing : 'ease'
 };
 		

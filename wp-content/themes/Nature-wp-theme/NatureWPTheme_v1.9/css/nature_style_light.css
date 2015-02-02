@@ -7,6 +7,7 @@ body {
 	line-height:18px;
 	background:#fff;
 	padding:0;
+	margin:0;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -522,6 +523,14 @@ ul.social > li a.dribbble:hover {
 .about-content{
 	margin:0 auto;
 	padding:0 auto;
+	
+}
+.about-text{
+	width:400px;
+	float:right;
+	text-align: center;
+	margin:100px auto;
+	/*padding-left:50px;*/
 	
 }
 
@@ -1599,7 +1608,9 @@ div.comments-list:nth-child(even) {
 		border-bottom:9px solid #85c63e;
 		width:100%;
 	}
-
+	.about-text{
+		margin-right:100px;
+	}
 
 
 }
