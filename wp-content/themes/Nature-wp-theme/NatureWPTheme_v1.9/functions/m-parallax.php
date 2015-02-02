@@ -19,8 +19,8 @@ global $nature_mt; ?>
                                 echo $video['title'];
                                 echo $video['desc'];
                                 echo do_shortcode('
-                            [video_lightbox_youtube video_id="$video["link"]" width="100%" height="100%" anchor="$video["title"]"]
-                            ');
+                                    [video_lightbox_youtube video_id="$video["link"]" width="100%" height="100%" anchor="$video["title"]"]
+                                ');
                                 echo "</li>";
                                 ?>
                                 <br/>
@@ -28,7 +28,6 @@ global $nature_mt; ?>
                             endforeach;
                             ?>
                         </ul>
-
                 </div>
             </div>
         </div>
