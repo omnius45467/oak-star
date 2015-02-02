@@ -1,4 +1,5 @@
 <?php
+
 /*
 Template name: Parallax page template
 */
@@ -8,21 +9,21 @@ global $nature_mt; ?>
     <div class="container-fluid">
 
         <div class="row-fluid">
-            <div class="col-lg-12">
+            <div class="">
                 <div class="newsletter-box">
                         <ul class="og-grid">
                             <?php
                             foreach (get_oak_star_videos() as $video):
                                 ?>
-                                <?php
+                            <?php
                                 echo "<li class='parallax-item'>";
-                                echo $video['title'];
-                                echo $video['desc'];
+                                echo '<h3>' .$video['title']. '</h3>';
+                                echo '<h5 style="color:#457;">'.$video['desc'].'</h5>';
                                 echo do_shortcode('
-                                    [video_lightbox_youtube video_id="$video["link"]" width="100%" height="100%" anchor="$video["title"]"]
+                                    [video_lightbox_youtube video_id='.$video["link"].' width="100%" height="100%" anchor='.$video["link"].']
                                 ');
                                 echo "</li>";
-                                ?>
+                            ?>
                                 <br/>
                             <?php
                             endforeach;

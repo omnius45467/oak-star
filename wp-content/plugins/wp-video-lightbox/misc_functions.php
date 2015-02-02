@@ -30,7 +30,7 @@ function wp_vid_lightbox_vimeo5_handler($atts)
     else    {
     	$anchor_replacement = $anchor;
     }    
-    $href_content = 'http://vimeo.com/'.$video_id.'?width='.$width.'&amp;height='.$height;		
+    $href_content = ''.$video_id.'?width='.$width.'&amp;height='.$height;
     $output = "";
     $output .= '<a rel="'.WPVL_PRETTYPHOTO_REL.'" href="'.$href_content.'" title="'.$description.'">'.$anchor_replacement.'</a>';	
     return $output;
@@ -64,7 +64,7 @@ function wp_vid_lightbox_youtube_handler($atts)
     else{
     	$anchor_replacement = $anchor;
     }
-    $href_content = 'https://www.youtube.com/watch?v='.$video_id.'&amp;width='.$width.'&amp;height='.$height;
+    $href_content = 'https://'.$video_id.'&amp;width='.$width.'&amp;height='.$height;
     $output = '<a rel="'.WPVL_PRETTYPHOTO_REL.'" href="'.$href_content.'" title="'.$description.'">'.$anchor_replacement.'</a>';
     return $output;
 }

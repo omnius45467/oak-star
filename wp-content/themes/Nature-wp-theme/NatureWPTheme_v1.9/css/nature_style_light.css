@@ -837,10 +837,11 @@ ul.social > li a.dribbble:hover {
 }
 
 .portfolio-slider-row {
-	padding:0 115px;
+	padding:0 auto;
+	margin:0 auto;
 }
 .portfolio-slider-span {
-	width:940px;
+	width:100%;
 }
 .portfolio-slider-span .flex-direction-nav {
 	display:none;
