@@ -1,6 +1,6 @@
  <?php global $nature_mt; ?>
                     <!-- Contact Info -->
-                    <div class="contact-info-span span12">
+                    <div class="contact-info-span col-md-12">
                         <div class="contact-info contact-centered">
                                 <?php if(isset($nature_mt['contact_address']) && $nature_mt['contact_address'] != '') { ?>
                                     <h4 style="color:#fff;"><?php echo $nature_mt['contact_address'];?></h4>
@@ -31,4 +31,4 @@
                             </ul>
                         </div>
                     </div>
-                <!-- Contact Form and Info -->
+                <!-- Contact Info End-->

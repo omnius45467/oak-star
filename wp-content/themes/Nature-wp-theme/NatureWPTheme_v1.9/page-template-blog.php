@@ -11,7 +11,7 @@ get_header('mt');
         <div class="container">
             <!-- section title -->
             <div class="row">
-                <div class="span12">
+                <div class="col-md-12">
                     <div class="section-title">
                         <h2><span>Our Blog</span></h2>
                         <p><?php echo get_post_meta( $post->ID, '_cmb_p_sub_title', true ); ?></p>

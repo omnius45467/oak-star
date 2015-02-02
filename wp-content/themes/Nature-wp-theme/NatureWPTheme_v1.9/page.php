@@ -6,7 +6,7 @@ get_header('mt');
         <div class="container">
             <!-- Blog Post's -->
             <div class="row single-blog-post-row">
-                <div class="span12 single-blog-post-span">
+                <div class="col-md-12 single-blog-post-span">
 				<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
                     <!-- Blog Post end -->
                 <div class="row <?php post_class(); ?>" id="post-<?php the_ID(); ?>">

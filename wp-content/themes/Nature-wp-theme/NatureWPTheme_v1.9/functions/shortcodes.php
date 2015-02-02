@@ -135,9 +135,9 @@ function m_events_row($atts, $content = null) {
 	extract( shortcode_atts( array(), $atts));
 
 	$code = '
-	<div class="container">
+
 		<div class="row service-row">'.do_shortcode($content).'</div>
-	</div>
+
 	';
 	return $code;
 }
@@ -154,7 +154,7 @@ function m_events($atts, $content = null) {
 	),$atts));
 
 	$code = '
-	                <div class="span4 service-span">
+	                <div class="col-md-4 service-span">
 	                    <div class="service-box">
 	                        <img class="img-circle" src="'.$image.'" alt="'.$title.'">
 	                        <h3>'.$title.'</h3>
