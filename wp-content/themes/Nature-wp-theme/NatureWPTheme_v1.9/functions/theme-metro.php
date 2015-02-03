@@ -7,7 +7,6 @@ $nature_mt = get_option('nature_mt');
 function theme_mt_styles(){
  global $nature_mt; 
 wp_enqueue_style('bootstrap', get_template_directory_uri().'/css/bootstrap.css', false, false, 'all');
-//wp_enqueue_style('bootstrap-map', get_template_directory_uri().'/css/bootstrap.css.map', false, false, 'all');
 wp_enqueue_style('bootstrap-responsive', get_template_directory_uri().'/css/bootstrap-responsive.css', false, false, 'all');
 wp_enqueue_style('flexslider', get_template_directory_uri().'/css/flexslider.css', false, false, 'all');
 wp_enqueue_style('font', get_template_directory_uri().'/css/font.css', false, false, 'all');

@@ -55,6 +55,16 @@ h6 {
 	color:#457;
 
 }
+
+ #container {
+	 width: 80%;
+	 margin: auto;
+ }
+.event {
+	background: rgb(135, 199, 135);
+	width: 320px;
+	height: 320px;
+}
 .error{
 	border-top:9px solid #85c63e;
 	background:url(../img/section-arrow.png) no-repeat top center;	

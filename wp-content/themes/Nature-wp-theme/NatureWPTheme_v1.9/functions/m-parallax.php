@@ -10,7 +10,7 @@ global $nature_mt; ?>
 
         <div class="row-fluid">
             <div class="portfolio">
-                <div class="og-grid">
+                <div id="og-grid"class="og-grid">
                         <ul class="list-inline">
                             <?php
                             foreach (get_oak_star_videos() as $video):

@@ -525,3 +525,8 @@ return this.$previewEl;
 return { init : init };
 
 })(jQuery);
+
+jQuery(function() {
+	var wall = new freewall("#freewall");
+	wall.fitWidth();
+});
