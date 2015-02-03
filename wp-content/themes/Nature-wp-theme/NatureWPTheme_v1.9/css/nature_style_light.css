@@ -51,6 +51,10 @@ h6 {
 	line-height:18px;
 	word-spacing:3px;
 }
+.fa{
+	color:#457;
+
+}
 .error{
 	border-top:9px solid #85c63e;
 	background:url(../img/section-arrow.png) no-repeat top center;	

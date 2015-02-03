@@ -478,92 +478,93 @@ function mt_events_content($atts=array()) {
 	}
 	add_shortcode('slide', 'm_slider_slide');	
 
-/*
+
+// Portfolio ShortCode
+//	function mt_portfolio($atts){
+//		extract(shortcode_atts( array(), $atts) );
+//     	$terms = get_terms("tagportifolio");
+//
+//		$the_query = new WP_Query('post_type=portfolio&posts_per_page=-1');
+//		if($the_query->have_posts()) :
+//
+//
+//		$projects = '<div class="row portfolio-photo-row">';
+//		$projects .= '<div class="container">';
+//        $projects .= '<div class="col-sm-12 col-md-12 col-lg-12 portfolio-photo-span">';
+//        $projects .= '<div id="portfolio-options" class="clearfix">';
+//        $projects .= ' <ul id="filters" class="option-set clearfix" data-option-key="filter">';
+//        $projects .= '<li><a href="#filter" data-option-value="*" class="selected">show all.</a></li>
+//					';
+//		$count = count($terms);
+//                     if ( $count > 0 ){
+//
+//                        foreach ( $terms as $term ) {
+//
+//                            $termname = strtolower($term->name);
+//                            $termname = str_replace(' ', '-', $termname);
+//                            $projects .='<li><a href="#filter" data-option-value=".'.$termname.'">'.$term->name.'</a></li>';
+//         				}
+//         }
+//        $projects .= '</ul>';
+//        $projects .= '</div>';
+//        $projects .= '<div id="portfolio-container" class="clearfix">';
+//
+//		while ( $the_query->have_posts() ) : $the_query->the_post();
+//		$project_id = get_the_ID();
+//		$project_title = get_the_title($project_id);
+//		$terms = get_the_terms( $project_id, 'tagportifolio' );
+//			if ( $terms && ! is_wp_error( $terms ) ) :
+//					$links = array();
+//
+//					foreach ( $terms as $term )
+//					{
+//						$links[] = $term->name;
+//					}
+//						$links = str_replace(' ', '-', $links);
+//						$tax = join( " ", $links );
+//						else :
+//							$tax = '';
+//						endif;
+//		$projects_classes = strtolower($tax);
+//		$thumbnail = get_the_post_thumbnail($project_id, 'portfolio_img');
+//		$projects_link = get_post_meta( $project_id, '_cmb_port_link', true );
+//		$projects_thumb_url= portfolio_thumbnail_url($project_id);
+//		$projects .= '<div class="photos '.$projects_classes.'">
+//								'.$thumbnail.'
+//                                <div class="portfolio-item-hover">';
+//
+//		if($pro_url = get_post_meta($project_id, "_cmb_port_url", true)):
+//			$projects.= '<a class="info" data-rel="prettyPhoto" href="'.$pro_url.'" title="'.$project_title.'"></a>';
+//		else :
+//			$projects.= '<a class="info" data-rel="prettyPhoto" href="'.$projects_thumb_url.'" title="'.$project_title.'"></a>';
+//		endif;
+//
+//         $projects .= '   			 <a class="link" href="'.$projects_link.'"></a>
+//                                    <h6>'.$project_title.'</h6>
+//                                    <p>'.$projects_classes.'</p>
+//                                </div>
+//                        </div>
+//                    ';
+//
+//				endwhile;
+//				$projects .= '</div></div></div>';
+//
+//				return $projects;
+//				endif;
+//	}
+//
+//add_shortcode('portfolio', 'mt_portfolio');
+
+
 // Portfolio ShortCode
 	function mt_portfolio($atts){
 		extract(shortcode_atts( array(), $atts) );
-     	$terms = get_terms("tagportifolio");
-		
+
 		$the_query = new WP_Query('post_type=portfolio&posts_per_page=-1');
 		if($the_query->have_posts()) :
-			
 
-		$projects = '<div class="row portfolio-photo-row">';
-        $projects .= '<div class="span12 portfolio-photo-span">';        
-        $projects .= '<div id="portfolio-options" class="clearfix">';
-        $projects .= ' <ul id="filters" class="option-set clearfix" data-option-key="filter">'; 
-        $projects .= '<li><a href="#filter" data-option-value="*" class="selected">show all.</a></li>
-					'; 
-		$count = count($terms);
-                     if ( $count > 0 ){
-                    
-                        foreach ( $terms as $term ) {
-                            
-                            $termname = strtolower($term->name);
-                            $termname = str_replace(' ', '-', $termname);                               
-                            $projects .='<li><a href="#filter" data-option-value=".'.$termname.'">'.$term->name.'</a></li>';
-         				}
-         }			
-        $projects .= '</ul>'; 
-        $projects .= '</div>';
-        $projects .= '<div id="portfolio-container" class="clearfix">';
-                     
-		while ( $the_query->have_posts() ) : $the_query->the_post();
-		$project_id = get_the_ID();
-		$project_title = get_the_title($project_id);
-		$terms = get_the_terms( $project_id, 'tagportifolio' );
-			if ( $terms && ! is_wp_error( $terms ) ) : 
-					$links = array();
-
-					foreach ( $terms as $term ) 
-					{
-						$links[] = $term->name;
-					}
-						$links = str_replace(' ', '-', $links);	
-						$tax = join( " ", $links );		
-						else :	
-							$tax = '';	
-						endif;
-		$projects_classes = strtolower($tax); 
-		$thumbnail = get_the_post_thumbnail($project_id, 'portfolio_img');
-		$projects_link = get_post_meta( $project_id, '_cmb_port_link', true );
-		$projects_thumb_url= portfolio_thumbnail_url($project_id);
-		$projects .= '<div class="photos '.$projects_classes.'">
-								'.$thumbnail.'
-                                <div class="portfolio-item-hover">';
-		
-		if($pro_url = get_post_meta($project_id, "_cmb_port_url", true)):
-			$projects.= '<a class="info" data-rel="prettyPhoto" href="'.$pro_url.'" title="'.$project_title.'"></a>';
-		else :
-			$projects.= '<a class="info" data-rel="prettyPhoto" href="'.$projects_thumb_url.'" title="'.$project_title.'"></a>';
-		endif; 
-                                    
-         $projects .= '   			 <a class="link" href="'.$projects_link.'"></a>
-                                    <h6>'.$project_title.'</h6>
-                                    <p>'.$projects_classes.'</p>
-                                </div>
-                        </div>
-                    ';
-
-				endwhile;
-				$projects .= '</div></div></div>';
-
-				return $projects;
-				endif;
-	}
-
-add_shortcode('portfolio', 'mt_portfolio');
-*/
-
-// Portfolio ShortCode
-	function mt_portfolio($atts){
-		extract(shortcode_atts( array(), $atts) );
-		
-		$the_query = new WP_Query('post_type=portfolio&posts_per_page=-1');
-		if($the_query->have_posts()) :
-			
         $projects = '<div class="container" id="freewall"><ul id="og-grid" class="og-grid">';
-                     
+
 		while ( $the_query->have_posts() ) : $the_query->the_post();
 		$project_id = get_the_ID();
 		$project_title = get_the_title($project_id);
@@ -573,14 +574,14 @@ add_shortcode('portfolio', 'mt_portfolio');
 		//$projects_limage = portfolio_thumbnail_url($project_id,'portfolio_limg');
 		$thumb = wp_get_attachment_image_src( get_post_thumbnail_id($project_id), 'portfolio_limg' );
 		$projects_limage = $thumb['0'];
-		$projects .= '	
+		$projects .= '
 			<li class="animated fadeIn brick">
 				<a href="'.$projects_link.'" data-largesrc="'.$projects_limage.'" data-title="'.$project_title.'" data-description="'.$project_content.'">
 							'.$thumbnail.'
 						</a>
 			</li>
 
-				';                
+				';
 
 
 				endwhile;

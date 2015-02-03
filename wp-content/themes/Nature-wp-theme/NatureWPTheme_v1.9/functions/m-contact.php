@@ -33,6 +33,4 @@ Template name: Contact Page Template
                      <?php } ?>
                  </ul>
              </div>
-                    
-                    
-                <!-- Contact Info End-->
+ <!-- Contact Info End-->
