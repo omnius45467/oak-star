@@ -1,4 +1,8 @@
-<?php global $nature_mt; ?>
+<?php
+/*
+Template name: Newsletter Page Template
+*/
+global $nature_mt; ?>
 <!-- Newsletter -->
     <section id="newsletter" class="newsletter">
         <div class="container-fluid">

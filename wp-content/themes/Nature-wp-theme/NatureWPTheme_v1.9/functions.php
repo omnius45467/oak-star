@@ -97,7 +97,7 @@ if(! function_exists('nature_customization'))
 			echo '<link id="' . $nature_mt['h4_font'] . '" href="http://fonts.googleapis.com/css?family=' .$nature_mt['h4_font'] . '" rel="stylesheet" type="text/css" />' . PHP_EOL;
 		}		
 		
-		//Bacground 
+		//Background
 		
 		
 			echo "\n<style type='text/css'> \n";
@@ -281,4 +281,39 @@ function get_oak_star_videos() {
 
 	return $videos;
 }
+
+
+
+function get_oak_star_events() {
+
+	//Query for products drop down
+	$type = 'events';
+	$args = array(
+		'post_type'        => $type,
+		'post_status'      => 'publish',
+		'order'            => 'ASC',
+		'orderby'          => 'title',
+		'posts_per_page'   => - 1
+	);
+
+	$my_query = new WP_Query($args);
+	$events = array();
+
+	if ($my_query->have_posts()) {
+		while ($my_query->have_posts())  {
+			$my_query->the_post();
+
+			$events[] = array(
+				'title' => get_the_title(),
+				'desc' => get_the_content()
+//				'file' => types_render_field('file', array('output' => 'raw'))
+			);
+		}
+	}
+
+	wp_reset_postdata();
+
+	return $events;
+}
+
 ?>

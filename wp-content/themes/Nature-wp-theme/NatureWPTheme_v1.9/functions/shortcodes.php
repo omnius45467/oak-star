@@ -129,7 +129,7 @@ add_shortcode('h6', 'h6_f');
 	}
 	add_shortcode('service', 'm_service');
 
-//Event-ROW
+////Event-ROW
 
 function m_events_row($atts, $content = null) {
 	extract( shortcode_atts( array(), $atts));
@@ -185,13 +185,13 @@ add_shortcode('events', 'm_events');
 	function m_rop($atts, $content = null) {
 	extract( shortcode_atts( array(), $atts));
 	$code = '
-	                <div class="span3 other-service-span">
+	                <div class="col-sm-12 col-md-3 col-lg-3 other-service-span">
                         <div class="other-service-box">
                             <h4 class="other-service-1">Design Therapy</h4>
                             <p>Lorem ipsum dolor slo onsec designs tueraliquet Morbi nec In Curabitur nel</p>
                         </div>
                     </div>
-                    <div class="span3 other-service-span">
+                    <div class="col-sm-12 col-md-3 col-lg-3 other-service-span">
                         <div class="other-service-box">
                             <h4 class="other-service-2">Design Therapy</h4>
                             <p>Lorem ipsum dolor slo onsec designs tueraliquet Morbi nec In Curabitur nel</p>
@@ -427,6 +427,19 @@ function mt_parallax($atts=array()) {
 }
 function mt_parallax_content($atts=array()) {
 	require (get_template_directory() . '/functions/m-parallax.php');
+}
+
+//events-section
+add_shortcode('events', 'mt_events');
+
+function mt_events($atts=array()) {
+	ob_start();
+	mt_events_content($atts);
+	$content = ob_get_clean();
+	return $content;
+}
+function mt_events_content($atts=array()) {
+	require (get_template_directory() . '/functions/m-events.php');
 }
 
 

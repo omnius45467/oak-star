@@ -5,7 +5,7 @@
     <section id="footer" class="footer">
         <div class="container-fluid">
             <div class="row-fluid">
-                <div class="span12 footer-span">
+                <div class="col-sm-12 col-md-12 col-lg-12 footer-span">
                     <div class="scroll-top"><a href="#"></a></div>
                     <?php if(isset($nature_mt['footer_text']) && $nature_mt['footer_text'] != '') { ?>
                     <p>&copy;<?php echo $nature_mt['footer_text'];?></p>
