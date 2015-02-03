@@ -12,12 +12,10 @@
 
         <!--Content-->
         <div class="col-md-12">
-
-
             <?php
 
             //get the event custom post types
-            $type = 'the_events';
+            $type = 'event';
             $args = array(
                 'post_type'        => $type,
                 'post_status'      => 'publish',
@@ -35,11 +33,10 @@
                     <?php the_post_thumbnail('small', array('style' => 'float: left; margin-right: 20px;')); ?>
                     <h2><?php the_title(); ?></h2>
                     <h2><?php the_content(); ?></h2>
-                    <?php echo types_render_field('desc2', array('output' => 'raw')); ?>
+                    <?php echo types_render_field('events', array('output' => 'raw')); ?>
                 </div>
 
             <?php endwhile; endif; wp_reset_postdata(); ?>
-            
         </div>
         <!--End Content-->
     </div>
