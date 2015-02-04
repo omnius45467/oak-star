@@ -34,7 +34,7 @@ wp_enqueue_script( 'script', get_template_directory_uri() . '/js/scripts.js', ar
 wp_enqueue_script( 'validaytor', get_template_directory_uri() . '/js/jquery.ufvalidator-1.0.5.js', array('jquery'), false, true);
 wp_enqueue_script( 'form', get_template_directory_uri() . '/js/jquery.form.js', array('jquery'), false, true);
 wp_enqueue_script( 'freewall', get_template_directory_uri() . '/js/jquery.freewall.js', array('jquery'), false, true);
-wp_enqueue_script( 'wow', get_template_directory_uri() . '/js/jquery.wow.js', array('jquery'), false, true);
+wp_enqueue_script( 'masonry', get_template_directory_uri() . '/js/jquery.masonry.js', array('jquery'), false, true);
 wp_enqueue_script( 'mediaelement', get_template_directory_uri() . '/player/lib/mediaelement.js', array('jquery'), false, true  );
 wp_enqueue_script( 'mediaelementplayer', get_template_directory_uri() . '/player/lib/mediaelementplayer.js', array('jquery'), false, true  );
 if ( is_singular() && get_option( 'thread_comments' ) )

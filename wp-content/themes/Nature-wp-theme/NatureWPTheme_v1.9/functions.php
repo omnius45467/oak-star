@@ -272,6 +272,7 @@ function get_oak_star_videos() {
 			$videos[] = array(
 				'title' => get_the_title(),
 				'desc' => get_the_content(),
+				'images' => 'images',
 				'link' => types_render_field('youtube-video-url', array('output' => 'raw'))
 			);
 		}	

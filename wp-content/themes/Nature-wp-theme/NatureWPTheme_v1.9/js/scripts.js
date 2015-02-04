@@ -121,6 +121,17 @@ $('#newsletter-form').submit(function() {
 
 });
 
+
+
+
+
+
+
+
+
+
+
+
 //portfolio
 //var temp = "<li class='brick'></li>";
 //var w = 1, h = 1, html = '', limitItem = 49;

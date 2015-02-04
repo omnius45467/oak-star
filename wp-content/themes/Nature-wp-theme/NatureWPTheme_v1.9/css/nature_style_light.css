@@ -57,14 +57,34 @@ h6 {
 }
 
  #container {
-	 width: 80%;
+	 width: 100%;
 	 margin: auto;
+	 color:#efefef;
  }
-.event {
-	background: rgb(135, 199, 135);
-	width: 320px;
-	height: 320px;
+
+#container-dm {
+	width: 80%;
+	margin:-100px auto;
+	color:#efefef;
 }
+.event {
+	opacity:0.8117;
+	border:none;
+	background: url('../img/horses.jpeg') bottom, left;
+	min-width:20%;
+	max-width:30%;
+	color:#efefef;
+	max-height: 60%;
+	font-size:1em;
+	padding:40px;
+	box-shadow:5px 5px 50px #333; 
+
+}
+.event h1, h2, h3, h4, h5, h6{
+	color:#efefef;
+	
+}
+.event.w2 { min-width: 50%;font-size:2em;max-height:60%; }
 .error{
 	border-top:9px solid #85c63e;
 	background:url(../img/section-arrow.png) no-repeat top center;	
@@ -72,6 +92,8 @@ h6 {
     padding-bottom: 150px;
     text-align: center;
 }
+
+
 a {
 	color:#85c63e;
 	text-decoration:none!important;
