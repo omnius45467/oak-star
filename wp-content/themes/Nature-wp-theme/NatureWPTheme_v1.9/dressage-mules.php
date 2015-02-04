@@ -11,9 +11,25 @@
         <!--End Section Title-->
 
         <!--Content-->
-        <div class="col-md-12">
-            <?php the_content(); ?>
-        </div>
+
+        <section id="container-dm" class="container portfolio">
+
+            <?php foreach (get_oak_star_videos() as $video): ?>
+                <div class="event pull-left well wow animated bounceInLeft" title="<?php echo ''.$video['desc'].'';?>" data-masonry-options='{ "columnWidth": 20, "itemSelector": ".event" }'>
+                    <?php
+                    echo '<hr>';
+                    echo '<h3>' .$video['title']. '</h3>';
+                    
+                    echo '<button>';
+                    echo do_shortcode('[video_lightbox_youtube video_id='.$video["link"].' width="100%" height="100%" anchor='.$video["link"].' alt='.$video['desc'].']');
+                    echo '</button>';
+                    echo '<hr>';
+                    ?>
+                </div>
+            <?php endforeach; ?>
+
+        </section>
+
         <!--End Content-->
     </div>
 </div>

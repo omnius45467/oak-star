@@ -68,23 +68,89 @@ h6 {
 	color:#efefef;
 }
 .event {
+	margin:10px 20px 30px 20px;
 	opacity:0.8117;
 	border:none;
-	background: url('../img/horses.jpeg') bottom, left;
 	min-width:20%;
 	max-width:30%;
-	color:#efefef;
-	max-height: 60%;
+	min-height:50%;
+	max-height: 100%;
+	color:#333;
 	font-size:1em;
-	padding:40px;
-	box-shadow:5px 5px 50px #333; 
-
+	padding:10px 20px 40px 20px;
+	box-shadow:5px 5px 50px #333;
+	-vendor-animation-duration: 3s;
+	-vendor-animation-delay: 2s;
 }
-.event h1, h2, h3, h4, h5, h6{
-	color:#efefef;
+.animated, .wow{
+	opacity:0.7;
 	
 }
-.event.w2 { min-width: 50%;font-size:2em;max-height:60%; }
+/*masonry boxes 2 sizes*/
+.event h1, h2, h3, h4, h5, h6, p, a{
+
+}
+.event.w2 {
+	margin:10px 20px 30px 20px;
+	min-width: 30%;
+	max-width:50%;
+	font-size:2em;
+	max-height:100%;
+	min-height:60%;
+
+}
+
+
+/*tooltip styles*/
+.ui-tooltip, .arrow:after {
+	background: #fff;
+
+}
+.ui-tooltip {
+	padding: 20px 20px;
+	color: #333;
+	font-size: 14px;
+	text-transform: uppercase;
+	box-shadow: 5px 5px 50px #333;
+}
+.arrow {
+	width: 70px;
+	height: 16px;
+	overflow: hidden;
+	position: absolute;
+	left: 50%;
+	margin-left: -35px;
+	bottom: -16px;
+}
+.arrow.top {
+	top: -16px;
+	bottom: auto;
+}
+.arrow.left {
+	left: 20%;
+}
+.arrow:after {
+	content: "";
+	position: absolute;
+	left: 20px;
+	top: -20px;
+	width: 25px;
+	height: 25px;
+	box-shadow: 6px 5px 9px -9px black;
+	-webkit-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
+.arrow.top:after {
+	bottom: -20px;
+	top: auto;
+}
+
+
+
+
+
+/*error files*/
 .error{
 	border-top:9px solid #85c63e;
 	background:url(../img/section-arrow.png) no-repeat top center;	
@@ -256,6 +322,7 @@ ul.social > li a.dribbble:hover {
 /* Home Slider
 -------------------------------------------------- */
 #homeCarousel.carousel .container {
+
 	position: relative;
 	z-index: 9;
 }
@@ -285,12 +352,14 @@ ul.social > li a.dribbble:hover {
 	background:url(../img/home-slider/right.png) no-repeat left bottom;
 }
 #homeCarousel.carousel {
+	opacity:0.75;
 	margin:0;	
 }
 #homeCarousel.carousel .item {
 	height: 604px;
 }
 #homeCarousel.carousel img {
+
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -301,7 +370,7 @@ ul.social > li a.dribbble:hover {
 #homeCarousel .carousel-caption {
 	background-color: transparent;
 	position: static;
-	padding:0;
+	padding:10px;
 	padding:11% 5% 20px;
 	text-align:center;
 	text-shadow: 0px 3px 1px rgba(51,87,0,.5);
@@ -324,11 +393,11 @@ ul.social > li a.dribbble:hover {
 	color: #fff;
 }
 #homeCarousel .carousel-caption p {
-	margin: 0;
+	margin: 10px;
 	line-height: 60px;
 	font-size:44px;
 	color: #fced00;
-	font-family:'BebasRegular', Arial, sans-serif;
+	font-family:'AngillaTattooPersonalUse', Arial, serif;
 }
 
 /* Navigation
@@ -346,6 +415,7 @@ ul.social > li a.dribbble:hover {
 
 .navbar,
 .navbar .nav {
+	opacity:0.8;
 	margin:0;
 	float:none;
 }
@@ -378,7 +448,7 @@ ul.social > li a.dribbble:hover {
 	text-shadow:none;
 	font-size:18px;
 	line-height:86px;
-	font-family:'BebasRegular', Arial, sans-serif;
+	
 	-webkit-transition: background 1s;
 	-moz-transition: background 1s;
 	-o-transition: background 1s;
@@ -880,6 +950,7 @@ ul.social > li a.dribbble:hover {
 	padding:130px 0 0px 0;
 	background:url(../img/portfolio.png) no-repeat top center;
 	margin-bottom: 100px;
+	min-height:300px;
 }
 
 .portfolio-slider-row {
@@ -1101,7 +1172,8 @@ ul.social > li a.dribbble:hover {
 	padding-bottom:104px;
 }
 .contact {
-	
+
+	opacity:0.75;
 	background: url(../img/contact-us-box.jpg) repeat center fixed;
 	background-size: cover !important;
 	padding:130px 0 55px;
@@ -1116,12 +1188,12 @@ ul.social > li a.dribbble:hover {
 	padding:0 122px;
 }
 .contact .section-title h2 span {
-	color:#fff;
+	color:#333;
 	background:url(../img/contact-us-title.png) no-repeat bottom center;
 }
 .contact .section-title p,
 .contact .section-subtitle h5 {
-	color:#fff;
+	color:#333;
 }
 
 .send-message-form-span {
@@ -1129,6 +1201,7 @@ ul.social > li a.dribbble:hover {
 }
 .send-message-form-box,
 .contact-info-box {
+	color:#333;
 	padding-bottom:45px;
 	text-align:center;
 }
@@ -1137,13 +1210,18 @@ ul.social > li a.dribbble:hover {
 }
 .send-message-form-box h3,
 .contact-info-box h3 {
-	color:#fff;
+	color:#333;
 	margin:0;
 	padding-bottom:35px;
 }
+.contact-info-box h4 {
+	color:#333;
+	margin:0;
+	padding-bottom:45px;
+}
 .send-message-form-box p,
 .contact-info p {
-	color:#fff;
+	color:#333;
 	line-height:22px;
 	margin:0;
 	padding-top:14px;

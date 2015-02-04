@@ -35,7 +35,8 @@
                 $src = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), array( 500,500 ), false, '' );
                 ?>
 
-                        <div class="event pull-left" style=" background: url('<?php echo $src[0]; ?>') no-repeat;">
+                        <div class="wow animated bounceInUp event pull-left" title="<?php echo date('D. F jS, Y', types_render_field('event-date', array('output' => 'raw'))); ?>
+" style=" background: url('<?php echo $src[0]; ?>') no-repeat;">
 
                             <h2><?php the_title(); ?></h2>
                             <p><?php the_content(); ?></p>

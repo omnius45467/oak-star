@@ -117,8 +117,37 @@ $('#newsletter-form').submit(function() {
   });
 
 });
-
-
+    $(function() {
+        $( document ).tooltip({
+            position: {
+                my: "center bottom-20",
+                at: "center top",
+                using: function( position, feedback ) {
+                    $( this ).css( position );
+                    $( "<div>" )
+                        .addClass( "arrow" )
+                        .addClass( feedback.vertical )
+                        .addClass( feedback.horizontal )
+                        .appendTo( this );
+                }
+            }
+        });
+    });
+    wow = new WOW(
+        {
+            boxClass:     'wow',      // default
+            animateClass: 'animated', // default
+            offset:       3,          // default
+            mobile:       true,       // default
+            live:         true,        // default
+            callback:     function(box) {
+                // the callback is fired every time an animation is started
+                // the argument that is passed in is the DOM node being animated
+                
+            }
+        }
+    )
+    wow.init();
 });
 
 

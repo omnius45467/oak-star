@@ -4,7 +4,7 @@ Template name: Contact Page Template
 */
  global $nature_mt; ?>
          <!-- Contact Info -->
-             <div class="contact-info contact-centered">
+             <div class="contact-info contact-centered well">
                  <?php if(isset($nature_mt['contact_address']) && $nature_mt['contact_address'] != '') { ?>
                      <h4 style="color:#fff;"><?php echo $nature_mt['contact_address'];?></h4>
                  <?php } ?>
