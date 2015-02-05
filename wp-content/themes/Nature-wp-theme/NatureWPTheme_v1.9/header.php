@@ -19,7 +19,7 @@ global $page, $paged;
     if(isset($nature_mt['integration_header'])) echo $nature_mt['integration_header'] . PHP_EOL;
     wp_head(); ?>
 </head>
-<body <?php body_class(); ?>>
+<body <?php body_class(); ?> >
 	
 <!-- Home -->
     <section id="home" class="home">

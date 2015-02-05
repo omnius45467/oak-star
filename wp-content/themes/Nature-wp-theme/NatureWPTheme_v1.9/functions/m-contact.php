@@ -4,9 +4,9 @@ Template name: Contact Page Template
 */
  global $nature_mt; ?>
          <!-- Contact Info -->
-             <div class="contact-info contact-centered well">
+             <div class="contact-info contact-centered">
                  <?php if(isset($nature_mt['contact_address']) && $nature_mt['contact_address'] != '') { ?>
-                     <h4 style="color:#fff;"><?php echo $nature_mt['contact_address'];?></h4>
+                     <h4><?php echo $nature_mt['contact_address'];?></h4>
                  <?php } ?>
                  <h4>
                      <?php if(isset($nature_mt['phone']) && $nature_mt['phone'] != '') { ?>
@@ -23,7 +23,7 @@ Template name: Contact Page Template
              <?php } ?>
                  <ul class="social">
                      <?php if(isset($nature_mt['twitter_url']) && $nature_mt['twitter_url'] != '') { ?>
-                         <li><a class="twitter" href="<?php echo $nature_mt['twitter_url'];?>">Twitter</a></li>
+                         <li><a class="fa fa-twitter-square fa-5x twitter" href="<?php echo $nature_mt['twitter_url'];?>">Twitter</a></li>
                      <?php } ?>
                      <?php if(isset($nature_mt['facebook_url']) && $nature_mt['facebook_url'] != '') { ?>
                          <li><a class="facebook" href="<?php echo $nature_mt['facebook_url'];?>">Facebook</a></li>
@@ -32,5 +32,6 @@ Template name: Contact Page Template
                          <li><a class="rss" href="<?php echo $nature_mt['rss_url'];?>">RSS</a></li>
                      <?php } ?>
                  </ul>
+
              </div>
  <!-- Contact Info End-->

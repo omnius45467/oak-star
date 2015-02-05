@@ -9,7 +9,7 @@ function theme_mt_styles(){
 wp_enqueue_style('bootstrap', get_template_directory_uri().'/css/bootstrap.css', false, false, 'all');
 wp_enqueue_style('bootstrap-responsive', get_template_directory_uri().'/css/bootstrap-responsive.css', false, false, 'all');
 wp_enqueue_style('flexslider', get_template_directory_uri().'/css/flexslider.css', false, false, 'all');
-wp_enqueue_style('font', get_template_directory_uri().'/css/font.css', false, false, 'all');
+//wp_enqueue_style('font', get_template_directory_uri().'/css/font.css', false, false, 'all');
 wp_enqueue_style('prettyPhoto', get_template_directory_uri().'/css/prettyPhoto.css', false, false, 'all');
 //wp_enqueue_style('nature_style_light', get_template_directory_uri().'/css/nature_style_light.css', false, false, 'all');
 wp_enqueue_style('component', get_template_directory_uri().'/css/component.css', false, false, 'all');
@@ -42,6 +42,9 @@ wp_enqueue_script( 'mediaelement', get_template_directory_uri() . '/player/lib/m
 wp_enqueue_script( 'mediaelementplayer', get_template_directory_uri() . '/player/lib/mediaelementplayer.js', array('jquery'), false, true  );
 wp_enqueue_script( 'ui', get_template_directory_uri() . '/js/jquery.ui.js', array('jquery'), false, true);
 wp_enqueue_script( 'wow', get_template_directory_uri() . '/js/jquery.wow.js', array('jquery'), false, true);
+wp_enqueue_script( 'underscore', get_template_directory_uri() . '/js/underscore.js', array('jquery'), false, true);
+    wp_enqueue_script( 'adapt', get_template_directory_uri() . '/js/jquery.backstreach.js', array('jquery'), false, true);
+wp_enqueue_script( 'adapt', get_template_directory_uri() . '/js/jquery.adaptive-backgrounds.js', array('jquery'), false, true);
 if ( is_singular() && get_option( 'thread_comments' ) )
         wp_enqueue_script( 'comment-reply' );
 }
@@ -151,6 +154,11 @@ class description_walker extends Walker_Nav_Menu
             }
 }
 
-
+function load_fonts() {
+    wp_register_style('et-googleFonts', 'http://fonts.googleapis.com/css?family=Rye');
+    wp_register_style('et-googleFonts', 'http://fonts.googleapis.com/css?family=Lora:400,700');
+    wp_enqueue_style('et-googleFonts');
+}
+add_action('wp_print_styles', 'load_fonts')
 
 ?>

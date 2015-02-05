@@ -148,6 +148,60 @@ $('#newsletter-form').submit(function() {
         }
     )
     wow.init();
+    /*
+     * If you'd like, you can attach Backstretch to any block-level element.
+     * For example, this demo.
+     */
+
+    $("#about-image").backstretch("http://localhost:8080/wp-content/uploads/2015/02/LHermanson.PersonalWebLicense..14USF.SLP_0353--SusanJStickle.com_.-ZF-3083-88351-2-004.jpg");
+    //adpative background
+    var defaults      = {
+        selector:             '[data-ab-css-background="1"]',
+        parent:               null,
+        exclude:              [ 'rgb(0,0,0)', 'rgba(255, 255, 255)' ],
+        normalizeTextColor:   true,
+        normalizedTextColors:  {
+            light:      "#fff",
+            dark:       "#000"
+        },
+        lumaClasses:  {
+            light:      "ab-light",
+            dark:       "ab-dark"
+        }
+    };
+
+    var css      = {
+        selector:             '[data-ab-css-background="1"]',
+        parent:               null,
+        exclude:              [ 'rgb(0,0,0)', 'rgba(255, 255, 255)' ],
+        normalizeTextColor:   true,
+        normalizedTextColors:  {
+            light:      "#F6F8F7",
+            dark:       "#7D7A73"
+        },
+        lumaClasses:  {
+            light:      "ab-light",
+            dark:       "ab-dark"
+        }
+    };
+    $(function() {
+        $( ".dialog" ).dialog({
+            autoOpen: false,
+            show: {
+                effect: "blind",
+                duration: 1000
+            },
+            hide: {
+                effect: "explode",
+                duration: 1000
+            }
+        });
+
+        $( "#opener" ).click(function() {
+            $( ".dialog" ).dialog( "open" );
+        });
+    });
+    //$('img').adaptiveBackground.run(defaults, css);
 });
 
 
