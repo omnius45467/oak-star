@@ -68,8 +68,6 @@ h6 {
 	padding-left:70px;
 }
  #container {
-	 background: #A67860;
-	 
 	 margin:0 auto;
 	 width: 80%;
 	 color:#efefef;
@@ -102,6 +100,19 @@ h6 {
 	-vendor-animation-duration: 3s;
 	-vendor-animation-delay: 2s;
 }
+
+.event-ser {
+	margin:10px;
+	border-bottom:9px solid #85c63e;
+
+	text-shadow:1px 1px 1px #777;
+	font-size:1em;
+	padding:50px;
+	box-shadow:5px 5px 50px #333;
+	-vendor-animation-duration: 3s;
+	-vendor-animation-delay: 2s;
+}
+
 .event h4, h2, {
 	color:#777;
 	

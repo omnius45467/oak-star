@@ -11,49 +11,44 @@
         <!--End Section Title-->
 
         <!--Content-->
-        <div id="container" class="services-section"  data-masonry-options='{ "columnWidth": 20, "itemSelector": ".event" }'>
+        <div id="container"  data-masonry-options='{ "columnWidth": 20, "itemSelector": ".event-ser" }'>
             <?php
 
-            //get the event custom post types
-            $type = 'service';
-            $args = array(
-                'post_type'        => $type,
-                'post_status'      => 'publish',
-                'order'            => 'date',
-                'date'             => 'date',
-                'orderby'          => 'title',
-                'posts_per_page'   => -1,
-                "title" => 'SERVICE TITLE',
-                "text" => 'SERVICE DETAILS',
-                "image" => 'SERVICE IMAGE',
-                "url" => 'SERVICE BUTTON URL',
-            );
+                //get the event custom post types
+                $type = 'service';
+                $args = array(
+                    'post_type'        => $type,
+                    'post_status'      => 'publish',
+                    'order'            => 'date',
+                    'date'             => 'date',
+                    'orderby'          => 'title',
+                    'posts_per_page'   => -1,
+                    "title" => 'SERVICE TITLE',
+                    "text" => 'SERVICE DETAILS',
+                    "image" => 'SERVICE IMAGE',
+                    "url" => 'SERVICE BUTTON URL',
+                );
 
-            $my_query = null;
-            $my_query = new WP_Query($args);
-?>
+                $my_query = null;
+                $my_query = new WP_Query($args);
+            ?>
             <?php if ($my_query->have_posts()): while($my_query->have_posts()): $my_query->the_post();?>
 
                 <?php
                 $src = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), array( 500,500 ), false, '' );
                 ?>
-                        <div class="wow animated bounceInUp event">
-                            <div class="col-sm-12 col-md-4 col-lg-3">
-                                <div class="service-box">
-                                    <div class="portfolio-slider-row">
-                                        <div class="portfolio-slider-span">
-                                            <div class="flexslider">
-                                    <img class="img-circle circle-service-image" src="<?php echo $src[0]; ?>" alt="'.$title.'">
-                                            </div>
-                                        </div>
-                                    <h2><?php the_title(); ?></h2>
-                                    <p><?php the_content();?></p>
-                                </div>
-                            </div>
-                        </div>
-            <?php endwhile; endif; wp_reset_postdata(); ?>
-        </div>
+                <div class="wow animated bounceInUp pull-right event-ser col-sm-12 col-md-12 col-lg-12">
+                    
+                    <img class="col-md-6 img-circle circle-service-image" src="<?php echo $src[0]; ?>" alt="'.$title.'">
+                       <div class="col-md-6">
+                           <h2><?php the_title(); ?></h2>
+                           <p><?php the_content();?></p>
+
+                       </div>
+
+                </div>
         <!--End Content-->
+            <?php endwhile; endif; wp_reset_postdata(); ?>
     </div>
 </div>
 </div>
