@@ -25,10 +25,12 @@ get_header(); ?>
     <style>
         .<?php echo $post->post_name;?>
         {
-            padding:100px 0 0px 0;}
-      
+            padding:100px 0 100px 0;
+
+        }
+
     </style>
-        <main role="main" class="container-fluid">
+        <main role="main">
             <!-- section -->
 
             <?php get_template_part($post->post_name); ?>

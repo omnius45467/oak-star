@@ -71,6 +71,7 @@ global $page, $paged;
         <nav class="navbar">
             <div class="navbar-inner">
                 <div class="main-nav">
+
                 <!-- Nav Menu -->
                     <?php wp_nav_menu(array(
                         'theme_location' => 'top-menu',

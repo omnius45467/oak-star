@@ -1,5 +1,4 @@
 <div class="row <?php echo $post->post_name;?>" id="<?php echo $post->post_name;?>">
-    <div class="container-fluid">
         <!-- Section Title -->
         <div class="section-title">
             <h2>
@@ -37,11 +36,12 @@
                 <?php
                 $src = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), array( 500,500 ), false, '' );
                 ?>
-                <div class="wow animated bounceInUp pull-right event-ser col-sm-12 col-md-12 col-lg-12">
-                    
-                    <img class="col-md-6 img-circle circle-service-image" src="<?php echo $src[0]; ?>" alt="'.$title.'">
-                       <div class="col-md-6">
-                           <h2><?php the_title(); ?></h2>
+                <div class="wow animated bounceInUp service-box col-sm-12 col-md-6 col-lg-3">
+
+
+                    <img class="col-md-12" src="<?php echo $src[0]; ?>" alt="<?php the_title(); ?>">
+                       <div class="col-md-12 service-text">
+                           <h2 class="service-title"><?php the_title(); ?></h2>
                            <p><?php the_content();?></p>
 
                        </div>
@@ -50,5 +50,5 @@
         <!--End Content-->
             <?php endwhile; endif; wp_reset_postdata(); ?>
     </div>
-</div>
+
 </div>

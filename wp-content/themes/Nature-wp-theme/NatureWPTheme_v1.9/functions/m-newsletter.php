@@ -7,7 +7,7 @@ global $nature_mt; ?>
     <section id="newsletter" class="newsletter">
         <div class="container-fluid">
             <div class="row-fluid">
-                <div class="span12">
+                <div class="col-md-12">
                     <div class="newsletter-box">
                                 <?php if(isset($nature_mt['newsletter_text']) && $nature_mt['newsletter_text'] != '') { ?>
                                     <?php echo $nature_mt['newsletter_text'];?>
