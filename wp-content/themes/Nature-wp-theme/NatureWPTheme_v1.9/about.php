@@ -1,6 +1,9 @@
 <div class="row <?php echo $post->post_name;?>" id="<?php echo $post->post_name;?>">
     <div class="container-fluid">
         <!-- Section Title -->
+        <?php
+        $src = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), array( 500,500 ), false, '' );
+        ?>
         <div class="section-title col-md-12" data-adaptive-background="1" data-ab-css-background="1">
 
             <h2>
@@ -12,16 +15,17 @@
         <!--End Section Title-->
 
         <!--Content-->
-        <span id="about-image" class="col-md-6">
+        <span id="about-image" class="col-md-12">
+            <img class="col-md-6"src="<?php echo $src[0]; ?>" alt="<? the_title();?>"/>
 
-        </span>
-                <div class="col-md-12">
+                <div class="col-md-6">
                     <div class="about-text">
 
                             <?php the_content(); ?>
 
                     </div>
                 </div>
+        </span>
         <!--End Content-->
     </div>
 </div>

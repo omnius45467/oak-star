@@ -153,7 +153,7 @@ $('#newsletter-form').submit(function() {
      * For example, this demo.
      */
 
-    $("#about-image").backstretch("http://localhost:8080/wp-content/uploads/2015/02/LHermanson.PersonalWebLicense..14USF.SLP_0353--SusanJStickle.com_.-ZF-3083-88351-2-004.jpg");
+
     //adpative background
     var defaults      = {
         selector:             '[data-ab-css-background="1"]',

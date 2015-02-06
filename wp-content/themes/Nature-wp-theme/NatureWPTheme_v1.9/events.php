@@ -36,14 +36,14 @@
             <div class="col-md-12" data-masonry-options='{ "columnWidth": 40, "itemSelector": ".event" }'>
 
                 <div class="col-md-6">
-                    <img class="wow animated bounceInUp event" data-adaptive-background="1" data-ab-css-background="1" src=" <?php echo $src[0]; ?>" />
+                    <img class="wow animated bounceInUp event responsive" data-adaptive-background="1" data-ab-css-background="1" src=" <?php echo $src[0]; ?>" />
                 </div>
                 <div class="col-md-6">
                     <h2><?php the_title(); ?></h2>
                     <?php the_content(); ?>
                     <h4><?php echo date('D. F jS, Y', types_render_field('event-date', array('output' => 'raw'))); ?></h4>
                     <?php echo types_render_field('event', array('output' => 'raw')); ?>
-                    <button>entry form</button>
+                    <button>Entry Form</button>
 
                 </div>
 

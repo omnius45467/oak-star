@@ -32,6 +32,5 @@ Template name: Contact Page Template
                          <li><a class="rss" href="<?php echo $nature_mt['rss_url'];?>">RSS</a></li>
                      <?php } ?>
                  </ul>
-
              </div>
  <!-- Contact Info End-->
