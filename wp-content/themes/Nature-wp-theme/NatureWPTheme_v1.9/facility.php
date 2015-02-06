@@ -1,5 +1,6 @@
+<div class="container-fluid">
 <div class="row <?php echo $post->post_name;?>" id="<?php echo $post->post_name;?>">
-    <div class="container-fluid">
+
         <!-- Section Title -->
         <div class="section-title">
             <h2>
@@ -11,7 +12,7 @@
         <!--End Section Title-->
 
         <!--Content-->
-        <div id="container" class="col-md-12 pull-right" data-masonry-options='{ "columnWidth": 40, "itemSelector": ".event" }'>
+       
             <?php
 
             //get the event custom post types
@@ -19,30 +20,37 @@
             $args = array(
                 'post_type'        => $type,
                 'post_status'      => 'publish',
-                'order'            => 'date',
-                'date'            => 'event-date',
                 'orderby'          => 'title',
                 'posts_per_page'   => -1
             );
-
+            $loopItr = 0;
             $my_query = null;
             $my_query = new WP_Query($args);
 
             if ($my_query->have_posts()): while($my_query->have_posts()): $my_query->the_post();
                 ?>
-
-                <?php
-                $src = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), array( 500,500 ), false, '' );
-                ?>
-
-                <div class="wow animated bounceInUp event col-md-3" data-adaptive-background="1" data-ab-css-background="1" title="<?php echo date('D. F jS, Y', types_render_field('date', array('output' => 'raw'))); ?>
-" style=" background: url('<?php echo $src[0]; ?>') no-repeat;">
-
-                    <h2><?php the_title(); ?></h2>
-                    <?php the_content(); ?>
+            <?php if ($loopItr >= 2): $loopItr = 0; ?>
+        </div>
+        <div class="row">
+            <?php endif; ?>
+            <div id="container"  data-masonry-options='{ "columnWidth": 40, "itemSelector": ".event" }'>
+            <?php $src = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), array( 500,500 ), false, '' );?>
+            <div class="card-container event col-md-12" data-autoflip="true" data-autoflipstart="700ms" data-autoflipdelay="3s">
+                <div class="card">
+                    <div class="front" style="background:url('<?php echo $src[0]; ?>') no-repeat;">
+                        <h2><?php the_title();?></h2>
+                    </div>
+                    <div class="back">
+                        <div>
+                            <h2><?php the_title();?></h2>
+                            <?php the_content(); ?>
+                        </div>
+                    </div>
                 </div>
+            </div>
 
-            <?php endwhile; endif; wp_reset_postdata(); ?>
+        </div>
+            <?php $loopItr++; endwhile; endif; wp_reset_postdata(); ?>
         </div>
 
         <!--End Content-->

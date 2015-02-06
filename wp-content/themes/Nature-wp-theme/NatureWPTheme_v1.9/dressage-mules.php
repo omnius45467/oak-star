@@ -25,7 +25,7 @@
 <!--                    <iframe title="--><?php //echo ''.$video['desc'].'';?><!--" class="youtube-player" type="text/html" width="640" height="390" src="--><?php //echo ''.$video["link"].'' ?><!--" frameborder="0" allowFullScreen></iframe>-->
                     <?php
                     echo types_render_field( "my-video", array("output" => "raw") );
-                    echo do_shortcode('[video_lightbox_youtube video_id='.$video["link"].' width="100%" height="100%" anchor='.$video["link"].' alt='.$video['desc'].']');
+                    echo do_shortcode('[video_lightbox_youtube video_id='.$video["link"].' width="100%" height="100%" anchor='.$video["link"].']');
                     echo'</span>';
                     ?>
 

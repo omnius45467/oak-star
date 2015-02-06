@@ -563,7 +563,7 @@ function mt_events_content($atts=array()) {
 		$the_query = new WP_Query('post_type=portfolio&posts_per_page=-1');
 		if($the_query->have_posts()) :
 
-        $projects = '<div class="container" id="freewall"><ul id="og-grid" class="og-grid">';
+        $projects = '<div class="container"><ul id="og-grid" class="og-grid">';
 
 		while ( $the_query->have_posts() ) : $the_query->the_post();
 		$project_id = get_the_ID();

@@ -19,6 +19,7 @@ wp_enqueue_style('ui-css', get_template_directory_uri().'/css/jquery-ui.css', fa
 wp_enqueue_style('icon', get_template_directory_uri().'/css/icon.css', false, false, 'all');
 wp_enqueue_style('special', get_template_directory_uri().'/css/special.css', false, false, 'all');
 wp_enqueue_style('slick', get_template_directory_uri().'/css/slick.css', false, false, 'all');
+wp_enqueue_style('flipcard', get_template_directory_uri().'/css/flipcard.css', false, false, 'all');
 
 
 }
@@ -36,6 +37,7 @@ wp_enqueue_script( 'prettyPhoto', get_template_directory_uri() . '/js/jquery.pre
 wp_enqueue_script( 'scrollTo', get_template_directory_uri() . '/js/jquery.scrollTo.js', array('jquery'), false, true);
 wp_enqueue_script( 'stickynav', get_template_directory_uri() . '/js/jquery.sticky.js', array('jquery'), false, true);
 wp_enqueue_script( 'modernizr', get_template_directory_uri() . '/js/modernizr.custom.js', array('jquery'), false, false);
+wp_enqueue_script( 'flipcard', get_template_directory_uri() . '/js/flipcard.js', array('jquery'), false, true);
 wp_enqueue_script( 'script', get_template_directory_uri() . '/js/scripts.js', array('jquery'), false, true);
 wp_enqueue_script( 'validaytor', get_template_directory_uri() . '/js/jquery.ufvalidator-1.0.5.js', array('jquery'), false, true);
 wp_enqueue_script( 'form', get_template_directory_uri() . '/js/jquery.form.js', array('jquery'), false, true);
@@ -50,6 +52,7 @@ wp_enqueue_script( 'adapt', get_template_directory_uri() . '/js/jquery.backstrea
 wp_enqueue_script( 'adapt', get_template_directory_uri() . '/js/jquery.adaptive-backgrounds.js', array('jquery'), false, true);
 wp_enqueue_script( 'slick', get_template_directory_uri() . '/js/slick.js', array('jquery'), false, true);
 wp_enqueue_script( 'responsive-slider', get_template_directory_uri() . '/js/responsive-slider.js', array('jquery'), false, true);
+
 if ( is_singular() && get_option( 'thread_comments' ) )
         wp_enqueue_script( 'comment-reply' );
 }

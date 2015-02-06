@@ -14,7 +14,6 @@
     $args = array(
         'post_type' => 'event',
         'post_status' => 'publish',
-        'date' => 'event-date',
         'posts_per_page' => -1
     );
 
@@ -30,10 +29,18 @@
     <div class="row">
         <?php endif; ?>
 
-        <div class="event col-sm-12 col-md-4 col-sm-offset-2 col-md-offset-0">
-            <img class="wow animated bounceInUp event responsive" data-adaptive-background="1" data-ab-css-background="1" src=" <?php echo $src[0]; ?>" />
-            <h3><?php the_title(); ?></h3>
-            <?php the_content(); ?>
+        <div class="event-ev col-sm-12 col-md-12 col-sm-offset-2 col-md-offset-0" title="<?php echo date('D. F jS, Y', types_render_field('event-date', array('output' => 'raw'))); ?>">
+            
+            <div class="col-md-6">
+                <img class="wow animated bounceInUp event responsive" data-adaptive-background="1" data-ab-css-background="1" src=" <?php echo $src[0]; ?>" />
+            </div>
+            
+            <div class="col-md-6">
+                <h2><?php the_title(); ?></h2>
+                <?php the_content(); ?>
+                <?php echo date('D. F jS, Y', types_render_field('event-date', array('output' => 'raw'))); ?>
+            </div>
+            
         </div>
         <?php $loopItr++; endwhile; endif; ?>
     </div>
