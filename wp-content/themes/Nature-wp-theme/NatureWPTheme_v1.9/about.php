@@ -16,7 +16,7 @@
 
         <!--Content-->
         <span id="about-image" class="col-md-12">
-            <img class="col-md-6"src="<?php echo $src[0]; ?>" alt="<? the_title();?>"/>
+            <img class="special event col-md-6"src="<?php echo $src[0]; ?>" alt="<? the_title();?>"/>
 
                 <div class="col-md-6">
                     <div class="about-text">

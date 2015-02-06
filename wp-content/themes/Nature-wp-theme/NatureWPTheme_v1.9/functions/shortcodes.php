@@ -439,7 +439,7 @@ function mt_events($atts=array()) {
 	return $content;
 }
 function mt_events_content($atts=array()) {
-	require (get_template_directory() . '/functions/m-events.php');
+	require (get_template_directory() . '/functions/m-works_events.php');
 }
 
 
