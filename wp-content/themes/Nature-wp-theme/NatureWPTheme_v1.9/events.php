@@ -1,5 +1,5 @@
 
-<div class="container-fluid">
+<div class="container-fluid <?php echo $post->post_name;?>" id="<?php echo $post->post_name;?>">
     <div class="row">
         <div class="section-title col-md-12">
             <h2><span><?php

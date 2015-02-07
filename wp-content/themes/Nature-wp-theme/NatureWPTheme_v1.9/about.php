@@ -19,6 +19,7 @@
                             </span>
                             </h2>
                         </span>
+
                         <p><?php echo get_post_meta( $post->ID, '_cmb_p_sub_title', true ); ?></p>
                         <hr/>
                             <?php the_content(); ?>

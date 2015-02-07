@@ -6,7 +6,7 @@
         <div class="container-fluid">
             <div class="row-fluid">
                 <div class="col-sm-12 col-md-12 col-lg-12">
-                    <div class="scroll-top"><a href="#"></a></div>
+                    <div class="scroll-top"><a href="#" class="fa fa-arrow-up fa-4x"></a></div>
                     <br/>
                     <?php if(isset($nature_mt['footer_text']) && $nature_mt['footer_text'] != '') { ?>
                     <p>&copy;<?php echo $nature_mt['footer_text'];?></p>
@@ -14,13 +14,13 @@
                     <!-- Footer Social Icon -->
                     <ul class="social">                        
                 <?php if(isset($nature_mt['twitter_url']) && $nature_mt['twitter_url'] != '') { ?>
-                        <li><a class="twitter" href="<?php echo $nature_mt['twitter_url'];?>"></a></li>
+                        <li><i class="fa fa-twitter-square fa-5x"></i><a class="twitter" href="<?php echo $nature_mt['twitter_url'];?>"></a></li>
                 <?php } ?> 
                 <?php if(isset($nature_mt['facebook_url']) && $nature_mt['facebook_url'] != '') { ?>
-                        <li><i class="facebook"></i><a class="fa fa-facebook-square fa-2x facebook" href="<?php echo $nature_mt['facebook_url'];?>">Facebook</a></li>
+                        <li><i class="fa fa-facebook-square fa-5x"></i><a class="fa fa-facebook-square fa-2x facebook" href="<?php echo $nature_mt['facebook_url'];?>">Facebook</a></li>
                 <?php } ?> 
                 <?php if(isset($nature_mt['rss_url']) && $nature_mt['rss_url'] != '') { ?>
-                        <li><i class="fa fa-instagram fa-5x"></i><a class="fa fa-instagram fa-2x rss" href="<?php echo $nature_mt['rss_url'];?>">RSS</a></li>
+                        <li><i ><a class="fa fa-instagram fa-2x rss" href="<?php echo $nature_mt['rss_url'];?>">RSS</a></i></li>
 
                 <?php } ?>
                     </ul>

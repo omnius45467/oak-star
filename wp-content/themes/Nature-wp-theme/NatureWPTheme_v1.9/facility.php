@@ -10,9 +10,9 @@
             <p><?php echo get_post_meta( $post->ID, '_cmb_p_sub_title', true ); ?></p>
         </div>
         <!--End Section Title-->
-
+</div>
         <!--Content-->
-       
+       <div class="row">
             <?php
 
             //get the event custom post types
@@ -48,11 +48,9 @@
                     </div>
                 </div>
             </div>
-
         </div>
             <?php $loopItr++; endwhile; endif; wp_reset_postdata(); ?>
         </div>
-
         <!--End Content-->
     </div>
 </div>

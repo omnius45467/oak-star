@@ -138,6 +138,10 @@ p{
 
 	
 }
+.event-ev p{
+	text-shadow:none;
+	
+}
 
 .event-ser {
 	background:#efefef;
@@ -323,10 +327,7 @@ a:hover {
 	color:#333;
 }
 
-.fa{
-	color:#000;
-	
-}
+
 
 
 ul.social {
@@ -611,8 +612,11 @@ ul.social > li a.dribbble:hover {
 	padding:60px;
 	
 }
+/*Facility*/
+#facility{
 
-
+	
+}
 
 /* Service
 -------------------------------------------------- */
@@ -624,6 +628,7 @@ ul.social > li a.dribbble:hover {
 #service-facility{
 	background:#D8E0EE;
 	padding-bottom:150px;
+	
 	
 }
 .service {
@@ -1556,7 +1561,7 @@ background: #E0E4CB;
 .footer {
 	border-bottom:9px solid #7D7A73;
 	text-align:center;
-	background-color:#D8E0EE;
+
 }
 .footer-span {
 	padding-bottom:45px;
@@ -1569,15 +1574,16 @@ background: #E0E4CB;
 	padding-bottom:20px;
 }
 .scroll-top a {
-    background: url(../img/home-slider/left.png) no-repeat left top;
+    /*background: url(../img/home-slider/left.png) no-repeat left top;*/
     height: 68px;
     width: 68px;
 	display:block;
-	-webkit-transform: rotate(90deg);
-	-moz-transform: rotate(90deg);
-	-ms-transform: rotate(90deg);
-	-o-transform: rotate(90deg);
-	transform: rotate(90deg);
+	/*-webkit-transform: rotate(90deg);*/
+	/*-moz-transform: rotate(90deg);*/
+	/*-ms-transform: rotate(90deg);*/
+	/*-o-transform: rotate(90deg);*/
+	/*transform: rotate(90deg);*/
+	color:#333;
 	-webkit-border-radius: 34px;
 	-moz-border-radius: 34px;
 	-o-border-radius: 34px;
@@ -1587,10 +1593,12 @@ background: #E0E4CB;
 	-o-transition: background 1s;
 	-ms-transition: background 1s;
 	transition: background 1s;
+	padding:20px;
 }
 .scroll-top a:hover {
+	padding:20px;
 	opacity:2.0;
-	background: url(../img/home-slider/left.png) no-repeat left bottom;
+	/*background: url(../img/home-slider/left.png) no-repeat left bottom;*/
 }
 .footer p {
 	font-family:'Lora', serif;
