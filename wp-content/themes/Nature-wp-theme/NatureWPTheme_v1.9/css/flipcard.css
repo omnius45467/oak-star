@@ -14,8 +14,9 @@
   -o-perspective: 1000px;
   perspective: 1000px;
   /*default width height*/
-  width: 400px;
-  height: 400px;
+  width: 300px;
+  height: 300px;
+  color: #333;
 }
 .card-container .card {
   position: relative;
@@ -23,6 +24,7 @@
   height: 100%;
   padding: 0;
   margin: 0;
+  color: #333;
   -webkit-transition-property: -webkit-transform;
   -webkit-transition-duration: 500ms;
   -webkit-transform-style: preserve-3d;
@@ -186,4 +188,10 @@
 }
 .flipped-bt .ie10 .back {
   transform: perspective(1000px) rotateX(0deg);
+}
+.back h2 {
+  font-size: 33px;
+}
+.front h2 {
+  font-size: 33px;
 }

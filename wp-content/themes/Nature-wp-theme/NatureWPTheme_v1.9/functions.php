@@ -306,8 +306,8 @@ function get_oak_star_events() {
 
 			$events[] = array(
 				'title' => get_the_title(),
-				'desc' => get_the_content()
-//				'file' => types_render_field('file', array('output' => 'raw'))
+				'desc' => get_the_content(),
+				'file' => types_render_field('entry', array('output' => 'raw'))
 			);
 		}
 	}

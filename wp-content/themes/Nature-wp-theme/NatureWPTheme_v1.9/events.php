@@ -1,4 +1,3 @@
-
 <div class="container-fluid <?php echo $post->post_name;?>" id="<?php echo $post->post_name;?>">
     <div class="row">
         <div class="section-title col-md-12">
@@ -31,14 +30,17 @@
 
         <div class="event-ev col-sm-12 col-md-12 col-sm-offset-2 col-md-offset-0" title="<?php echo date('D. F jS, Y', types_render_field('event-date', array('output' => 'raw'))); ?>">
             
-            <div class="col-md-6">
+            <div class="col-sm-12 col-md-6">
                 <img class="wow animated bounceInUp event responsive" data-adaptive-background="1" data-ab-css-background="1" src=" <?php echo $src[0]; ?>" />
             </div>
             
-            <div class="col-md-6">
+            <div class="col-sm-12 col-md-6 wow animated fadeInUp">
                 <h2><?php the_title(); ?></h2>
                 <?php the_content(); ?>
-                <?php echo date('D. F jS, Y', types_render_field('event-date', array('output' => 'raw'))); ?>
+                <h4><?php echo date('D. F jS, Y', types_render_field('event-date', array('output' => 'raw'))); ?></h4>
+                
+                <button class="btn"><a href = "<?php echo types_render_field('entry', array('output' => 'raw')); ?>"> Entry Form </a ></button>
+
             </div>
             
         </div>

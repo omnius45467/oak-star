@@ -31,37 +31,48 @@ global $page, $paged;
         <!-- Home Slider -->
         <div id="homeCarousel" class="carousel slide">
             <div class="carousel-inner">
-                    <?php
-                        query_posts('post_type=carousel_slider&posts_per_page=-1'); if( have_posts() ) : while( have_posts() ) : the_post(); global $post;
-                    ?>  
-                <div class="item <?php echo get_post_meta( $post->ID, '_cmb_first_slider_active_item', true ); ?>">
-                    
-					<div class="fill" style="background-image:url('<?php echo get_post_meta( $post->ID, '_cmb_h_slider_image', true ); ?>');">
-						<div class="container">
-							<div class="carousel-caption">
-								<?php echo get_post_meta( $post->ID, '_cmb_h_slider_caption', true ); ?>
-							</div>
-						</div>
-					</div>
-					
-                </div>
-                    <?php 
-                            endwhile; else :
+                <?php
+                query_posts('post_type=carousel_slider&posts_per_page=-1'); if( have_posts() ) : while( have_posts() ) : the_post(); global $post;
                     ?>
-            
-                    <?php
-                            endif;
-                            wp_reset_query();
+<!--                    <div class="item --><?php //echo get_post_meta( $post->ID, '_cmb_first_slider_active_item', true ); ?><!--">-->
+                    <div class="item active">
+                        <div class="fill" style="background-image:url('<?php echo get_post_meta( $post->ID, '_cmb_h_slider_image', true ); ?>');">
+                            <div class="container">
+                                <div class="carousel-caption">
+                                    <?php echo get_post_meta( $post->ID, '_cmb_h_slider_caption', true ); ?>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                <?php
+                endwhile; else :
                     ?>
+
+                <?php
+                endif;
+                wp_reset_query();
+                ?>
             </div>
-            <a class="left carousel-control" href="#homeCarousel" data-slide="prev">&lsaquo;</a>
-            <a class="right carousel-control" href="#homeCarousel" data-slide="next">&rsaquo;</a>
+<!--            <a class="left carousel-control" href="#homeCarousel" data-slide="prev">&lsaquo;</a>-->
+<!--            <a class="right carousel-control" href="#homeCarousel" data-slide="next">&rsaquo;</a>-->
         </div>
         <!-- Home Slider end -->
         <!-- Navigation -->
         <nav class="navbar">
             <div class="navbar-inner">
                 <div class="main-nav">
+                        <?php
+                        if(isset($nature_mt['phone']) && $nature_mt['phone'] != '') {
+                            echo '<div class="pull-right">';
+                            echo '<p class="shout">Call Us Today!</p><h2 class="phone-number"><a href="tel:';
+                            echo $nature_mt['phone'];
+                            echo '">';
+                            echo $nature_mt['phone'];
+                            echo '</a></h2>';
+                            echo '</div>';
+                        };
+                        ?>
                 <!-- Nav Menu -->
                     <?php wp_nav_menu(array(
                         'theme_location' => 'top-menu',
@@ -71,8 +82,8 @@ global $page, $paged;
                         'fallback_cb' => 'show_top_menu',
                         'echo' => true,
                         'walker' => new description_walker(),
-                        'depth' => 1 ) ); 
-                    ?>                
+                        'depth' => 1 ) );
+                    ?>
                 </div>
                 <!-- Nav Menu end-->
             </div>
