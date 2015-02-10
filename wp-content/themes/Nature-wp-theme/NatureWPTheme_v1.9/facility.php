@@ -12,7 +12,7 @@
         <!--End Section Title-->
 </div>
         <!--Content-->
-       <div class="row">
+       <div class="row container">
             <?php
 
             //get the event custom post types
@@ -29,16 +29,17 @@
 
             if ($my_query->have_posts()): while($my_query->have_posts()): $my_query->the_post();
                 ?>
-            <?php if ($loopItr >= 2): $loopItr = 0; ?>
+            <?php if ($loopItr >= 3): $loopItr = 0; ?>
         </div>
-        <div class="row">
+        <div class="row container">
             <?php endif; ?>
             <div id="container"  data-masonry-options='{ "columnWidth": 40, "itemSelector": ".event" }'>
             <?php $src = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), array( 500,500 ), false, '' );?>
             <div class="card-container event col-md-12" data-autoflip="true" data-autoflipstart="700ms" data-autoflipdelay="3s">
                 <div class="card">
-                    <div class="front" style="background:url('<?php echo $src[0]; ?>') no-repeat;">
+                    <div class="front" style="background:url('<?php echo $src[0]; ?>') no-repeat;"><!--style="background:url('<?php echo $src[0]; ?>') no-repeat;"-->
                         <h2><?php the_title();?></h2>
+<!--                        <img src="--><?php //echo $src[0]; ?><!--" alt="--><?php //the_title();?><!--"/>-->
                     </div>
                     <div class="back">
                         <div>

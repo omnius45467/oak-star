@@ -1,4 +1,4 @@
-<div class="container-fluid">
+<div class="container-fluid newsletter">
 
 <div class="row <?php echo $post->post_name;?>" id="<?php echo $post->post_name;?>">
     <div class="section-title">
@@ -34,12 +34,12 @@
 </div>
 <div class="row">
     <?php endif; ?>
-    <div class="col-md-3" data-masonry-options='{ "columnWidth": 20, "itemSelector": ".event" }'>
+    <div class="col-md-3 service-item" data-masonry-options='{ "columnWidth": 20, "itemSelector": ".service-item" }'>
         <div id="container">
-            <img class="col-md-12" src="<?php echo $src[0]; ?>" alt="<?php the_title(); ?>">
-            <div class="col-md-12 service-text">
-                <h2 class="service-title"><?php the_title(); ?></h2>
-                <p><?php the_content();?></p>
+            <img class="col-md-12 service-image" src="<?php echo $src[0]; ?>" alt="<?php the_title(); ?>">
+            <div class="col-md-12 service-text event" style="color:#333; margin-top:20px;">
+                <h3 class="service-title" style="text-shadow:1px 1px 2px #333;"><?php the_title(); ?></h3>
+                <?php the_content();?>
             </div>
         </div>
     </div>

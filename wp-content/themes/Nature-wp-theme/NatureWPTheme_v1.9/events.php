@@ -11,6 +11,8 @@
     <!--    //content-->
     <?php
     $args = array(
+        'order' => 'ASC',
+        'orderby' => 'meta_value_num',
         'post_type' => 'event',
         'post_status' => 'publish',
         'posts_per_page' => -1

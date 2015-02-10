@@ -88,7 +88,7 @@ p{
 }
 
 #container-dm {
-	width: 50%;
+	width:60%;
 	margin:0 auto;
 	text-align:center;
 	
@@ -161,7 +161,8 @@ p{
 }
 
 .event-dm {
-
+	padding:0;
+	margin:0;
 	border:none;
 	min-width:25%;
 	max-width:100%;
@@ -185,6 +186,11 @@ p{
 
 	
 }
+.service-image{
+	border-radius:50%;
+	
+}
+
 /*masonry boxes 2 sizes*/
 
 .event.w2 {
@@ -626,8 +632,9 @@ ul.social > li a.dribbble:hover {
 	
 }
 #service-facility{
-	background:#D8E0EE;
+	/*background:#D8E0EE;*/
 	padding-bottom:150px;
+
 	
 	
 }
@@ -642,11 +649,20 @@ ul.social > li a.dribbble:hover {
 .service-row {
 	padding:0 120px;
 }
-
+.service-facility h2{
+	/*color:#efefef;*/
+	
+}
 .service-text{
 	line-height: 1em;
-	color:#333;
+	/*color:#efefef;*/
 }
+
+.service-text h2{
+
+	/*color:#efefef;*/
+}
+
 .service-span {
 	width:290px;
 }
@@ -1012,7 +1028,7 @@ background: #E0E4CB;
 .newsletter {
 	min-height:400px;
 	margin:100px -20px 0;
-	background:url(../img/newsletter.jpg) repeat center fixed;
+	background:url(../img/horses.jpeg) no-repeat bottom center fixed;
 	background-size: cover !important;
 	border-bottom:9px solid #7D7A73;
 }

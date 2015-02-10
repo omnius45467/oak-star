@@ -79,7 +79,7 @@ function wp_vid_lightbox_get_auto_thumb($atts)
     if($atts['vid_type']=="youtube")
     {
         $anchor_replacement = '<div class="wpvl_auto_thumb_box_wrapper"><div class="wpvl_auto_thumb_box">';
-        $anchor_replacement .= '<img src="https://img.youtube.com/vi/'.$video_id.'/0.jpg" class="video_lightbox_auto_anchor_image" alt="" />';
+        $anchor_replacement .= '<img src="https://img.youtube.com/'.$video_id.'/0.jpg" class="video_lightbox_auto_anchor_image" alt="" />';
         $anchor_replacement .= '<div class="wpvl_auto_thumb_play"><img src="'.WP_VID_LIGHTBOX_URL.'/images/play.png" class="wpvl_playbutton" /></div>';
         $anchor_replacement .= '</div></div>';
     }
