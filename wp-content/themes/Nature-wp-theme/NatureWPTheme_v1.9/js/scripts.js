@@ -210,6 +210,7 @@ var options = {
     direction: 'tb', //values: 'lr' (left to right), 'tb'(top to bottom), 'rl' and 'bt'
     speed: '500ms', //specify animation duration
     timingfunction: 'linear', //built-in timing function list (see it below) or customized cubic-beizer
+    flipOnHover: "true",
     onflipping: function(dir, transDir) //this event will be triggered before animation
     {
         //dir is direction e.g. 'lr', 'tb'

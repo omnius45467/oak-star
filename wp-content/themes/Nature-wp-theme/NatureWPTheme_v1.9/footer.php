@@ -1,7 +1,7 @@
  <?php global $nature_mt; ?>
 </div>
 <!-- Footer -->
-<footer>
+<footer class="wow animated fadeIn">
     <section id="footer" class="footer">
         <div class="container-fluid">
             <div class="row-fluid">
@@ -20,7 +20,7 @@
                         <li><i class="fa fa-facebook-square fa-5x"></i><a class="fa fa-facebook-square fa-2x facebook" href="<?php echo $nature_mt['facebook_url'];?>">Facebook</a></li>
                 <?php } ?> 
                 <?php if(isset($nature_mt['rss_url']) && $nature_mt['rss_url'] != '') { ?>
-                        <li><i ><a class="fa fa-instagram fa-2x rss" href="<?php echo $nature_mt['rss_url'];?>">RSS</a></i></li>
+                        <li><i class="fa fa-instagram fa-5x"><a class="fa fa-instagram fa-5x rss" href="<?php echo $nature_mt['rss_url'];?>">RSS</a></i></li>
 
                 <?php } ?>
                     </ul>

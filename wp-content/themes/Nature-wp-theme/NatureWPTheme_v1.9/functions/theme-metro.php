@@ -15,6 +15,8 @@ wp_enqueue_style('prettyPhoto', get_template_directory_uri().'/css/prettyPhoto.c
 wp_enqueue_style('component', get_template_directory_uri().'/css/component.css', false, false, 'all');
 wp_enqueue_style('animate', get_template_directory_uri().'/css/animate.css', false, false, 'all');
 wp_enqueue_style('nav', get_template_directory_uri().'/css/nav.css', false, false, 'all');
+wp_enqueue_style('events', get_template_directory_uri().'/css/events.css', false, false, 'all');
+wp_enqueue_style('service', get_template_directory_uri().'/css/service.css', false, false, 'all');
 wp_enqueue_style('font-awesome', get_template_directory_uri().'/font-awesome-4.3.0/css/font-awesome.min.css', false, false, 'all');
 wp_enqueue_style('ui-css', get_template_directory_uri().'/css/jquery-ui.css', false, false, 'all');
 wp_enqueue_style('icon', get_template_directory_uri().'/css/icon.css', false, false, 'all');

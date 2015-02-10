@@ -1,6 +1,6 @@
 <div class="container-fluid <?php echo $post->post_name;?>" id="<?php echo $post->post_name;?>">
     <div class="row">
-        <div class="section-title col-md-12">
+        <div class="section-title col-md-12 wow animated fadeIn">
             <h2><span><?php
                 $top_title = get_post_meta($post->ID, 'top_title', true);
                 if($top_title != '') echo $top_title; else the_title();

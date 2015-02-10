@@ -1,7 +1,7 @@
 <div class="container-fluid newsletter">
 
 <div class="row <?php echo $post->post_name;?>" id="<?php echo $post->post_name;?>">
-    <div class="section-title">
+    <div class="section-title wow animated fadeIn">
         <h2>
             <span><?php $top_title = get_post_meta($post->ID, 'top_title', true);
                 if($top_title != '') echo $top_title; else the_title();?></span>
@@ -34,8 +34,8 @@
 </div>
 <div class="row">
     <?php endif; ?>
-    <div class="col-md-3 service-item" data-masonry-options='{ "columnWidth": 20, "itemSelector": ".service-item" }'>
-        <div id="container">
+    <div class="col-md-3 service-item wow animated fadeIn" data-masonry-options='{ "columnWidth": 20, "itemSelector": ".service-item" }'>
+        <div id="container" class="container">
             <img class="col-md-12 service-image" src="<?php echo $src[0]; ?>" alt="<?php the_title(); ?>">
             <div class="col-md-12 service-text event" style="color:#333; margin-top:20px;">
                 <h3 class="service-title" style="text-shadow:1px 1px 2px #333;"><?php the_title(); ?></h3>

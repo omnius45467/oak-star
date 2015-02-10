@@ -64,7 +64,7 @@ global $page, $paged;
                 <div class="main-nav">
                         <?php
                         if(isset($nature_mt['phone']) && $nature_mt['phone'] != '') {
-                            echo '<div class="pull-right">';
+                            echo '<div class="pull-right number-box">';
                             echo '<p class="shout">Call Us Today!</p><h2 class="phone-number"><a href="tel:';
                             echo $nature_mt['phone'];
                             echo '">';
