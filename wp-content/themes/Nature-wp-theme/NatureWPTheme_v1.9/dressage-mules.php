@@ -24,7 +24,7 @@
                             echo '</span>';
                             echo '<span class="video-link">';
                             ?>
-                            <iframe title="<?php echo ''.$video['desc'].'';?>" class="youtube-player" type="text/html" width="640" height="390" src="https://www.youtube.com/embed/<?php echo $video['link'] ?>" frameborder="0" allowFullScreen></iframe>
+                            <iframe title="<?php echo ''.$video['desc'].'';?>" class="event youtube-player" type="text/html" src="https://www.youtube.com/embed/<?php echo $video['link'] ?>" frameborder="0" allowFullScreen></iframe>
                             <?php
                             echo '</span>';
                             ?>

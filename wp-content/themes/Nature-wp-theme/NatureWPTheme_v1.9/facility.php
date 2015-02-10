@@ -37,7 +37,7 @@
             <?php $src = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), array( 500,500 ), false, '' );?>
             <div class="card-container event col-md-12 wow animated fadeInRight">
                 <div class="card">
-                    <div class="front" style="background:url('<?php echo $src[0]; ?>') no-repeat;">
+                    <div class="front" style="background:url('<?php echo $src[0]; ?>') center no-repeat;">
                         <h2><?php the_title();?></h2>
 
                     </div>
