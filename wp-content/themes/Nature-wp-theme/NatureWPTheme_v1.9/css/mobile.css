@@ -10,10 +10,20 @@
   .container {
     padding-left: -70px !important;
   }
-  .navbar .navbar-left {
+  .navbar .main-nav .navbar-left {
     display: none;
   }
   .navbar .navbar-right {
+    display: none;
+  }
+}
+@media only screen and (min-device-width: 480px) and (max-device-width: 600px) {
+  .navbar .main-nav .navbar-left {
+    display: none;
+  }
+}
+@media only screen and (min-device-width: 601px) and (max-device-width: 800px) {
+  .navbar .main-nav .navbar-left {
     display: none;
   }
 }
