@@ -23,23 +23,22 @@
                 'orderby'          => 'title',
                 'posts_per_page'   => -1
             );
-            $loopItr = 0;
+            $Count = 0;
             $my_query = null;
             $my_query = new WP_Query($args);
 
             if ($my_query->have_posts()): while($my_query->have_posts()): $my_query->the_post();
                 ?>
-            <?php if ($loopItr >= 3): $loopItr = 0; ?>
-        </div>
-        <div class="row container">
+            <?php if ($Count >= 3): $Count = 0; ?>
+                </div>
+                <div class="row container">
             <?php endif; ?>
             <div id="container" data-masonry-options='{ "columnWidth": 40, "itemSelector": ".event" }'>
             <?php $src = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), array( 500,500 ), false, '' );?>
-            <div class="col-sm-12 col-md-3 col-lg-3 card-container event wow animated fadeInRight">
+            <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 card-container center-block event-fac wow animated fadeInRight">
                 <div class="card">
                     <div class="front" style="background:url('<?php echo $src[0]; ?>') center no-repeat;">
                         <h2><?php the_title();?></h2>
-
                     </div>
                     <div class="back" style="text-align:center; padding:auto;">
                         <h2><?php the_title();?></h2>
@@ -48,7 +47,7 @@
                 </div>
             </div>
         </div>
-            <?php $loopItr++; endwhile; endif; wp_reset_postdata(); ?>
+            <?php $Count++; endwhile; endif; wp_reset_postdata(); ?>
         </div>
         <!--End Content-->
     </div>

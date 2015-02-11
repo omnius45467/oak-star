@@ -21,15 +21,15 @@ Template name: Contact Page Template
                      <a href="<?php echo $nature_mt['web'];?>"><?php echo $nature_mt['web'];?></a>
                  </h4>
              <?php } ?>
-                 <ul class="social">
+                 <ul class="social" style="margin-right:43px;">
                      <?php if(isset($nature_mt['twitter_url']) && $nature_mt['twitter_url'] != '') { ?>
-                         <li><a class="fa fa-twitter-square fa-5x twitter" href="<?php echo $nature_mt['twitter_url'];?>">Twitter</a></li>
+                         <li><a class="fa fa-twitter-square fa-5x" href="<?php echo $nature_mt['twitter_url'];?>"></a></li>
                      <?php } ?>
                      <?php if(isset($nature_mt['facebook_url']) && $nature_mt['facebook_url'] != '') { ?>
-                         <li><a class="facebook" href="<?php echo $nature_mt['facebook_url'];?>">Facebook</a></li>
+                         <li><a class="fa fa-facebook-square fa-5x" href="<?php echo $nature_mt['facebook_url'];?>"></a></li>
                      <?php } ?>
                      <?php if(isset($nature_mt['rss_url']) && $nature_mt['rss_url'] != '') { ?>
-                         <li><a class="rss" href="<?php echo $nature_mt['rss_url'];?>">RSS</a></li>
+                         <li><a class="fa fa-instagram fa-5x" href="<?php echo $nature_mt['rss_url'];?>"></a></li>
                      <?php } ?>
                  </ul>
              </div>

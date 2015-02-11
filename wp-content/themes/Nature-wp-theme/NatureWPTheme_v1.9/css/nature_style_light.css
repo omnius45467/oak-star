@@ -63,7 +63,10 @@ h6 {
 }
 p{
 	font-size:1.5em;
-	line-height:1em;
+	line-height:1.5em;
+	color:#777;
+	text-align:center;
+	text-shadow:none;
 	
 }
 .fa{
@@ -344,52 +347,52 @@ ul.social {
 	text-align:center;
 }
 ul.social > li {
-	width:60px;
-	height:60px;
+	/*width:60px;*/
+	/*height:60px;*/
 	display:inline-block;
-	padding:0 2px;
+	padding:0 auto;
 }
 ul.social > li a {
 	display:block;
-	width:30px;
-	height:30px;
+	/*width:30px;*/
+	/*height:30px;*/
 	overflow:hidden;
-	-webkit-transition: background 0.5s;
-	-moz-transition: background 0.5s;
-	-o-transition: background 0.5s;
-	-ms-transition: background 0.5s;
-	transition: background 0.5s;
-	text-indent:-999px;
+	/*-webkit-transition: background 0.5s;*/
+	/*-moz-transition: background 0.5s;*/
+	/*-o-transition: background 0.5s;*/
+	/*-ms-transition: background 0.5s;*/
+	/*transition: background 0.5s;*/
+	/*text-indent:-999px;*/
 }
 ul.social > li a.twitter {
-    background: url(../img/social-icon/twitter.png) no-repeat left top;
+    /*background: url(../img/social-icon/twitter.png) no-repeat left top;*/
 }
 ul.social > li a.twitter:hover {
-    background: url(../img/social-icon/twitter.png) no-repeat left bottom;
+    /*background: url(../img/social-icon/twitter.png) no-repeat left bottom;*/
 }
 ul.social > li a.facebook {
-    background: url(../img/social-icon/facebook.png) no-repeat left top;
+    /*background: url(../img/social-icon/facebook.png) no-repeat left top;*/
 }
 ul.social > li a.facebook:hover {
-    background: url(../img/social-icon/facebook.png) no-repeat left bottom;
+    /*background: url(../img/social-icon/facebook.png) no-repeat left bottom;*/
 }
 ul.social > li a.rss {
-    background: url(../img/social-icon/rss.png) no-repeat left top;
+    /*background: url(../img/social-icon/rss.png) no-repeat left top;*/
 }
 ul.social > li a.rss:hover {
-    background: url(../img/social-icon/rss.png) no-repeat left bottom;
+    /*background: url(../img/social-icon/rss.png) no-repeat left bottom;*/
 }
 ul.social > li a.forrst {
-    background: url(../img/social-icon/forrst.png) no-repeat left top;
+    /*background: url(../img/social-icon/forrst.png) no-repeat left top;*/
 }
 ul.social > li a.forrst:hover {
-    background: url(../img/social-icon/forrst.png) no-repeat left bottom;
+    /*background: url(../img/social-icon/forrst.png) no-repeat left bottom;*/
 }
 ul.social > li a.dribbble {
-    background: url(../img/social-icon/dribbble.png) no-repeat left top;
+    /*background: url(../img/social-icon/dribbble.png) no-repeat left top;*/
 }
 ul.social > li a.dribbble:hover {
-    background: url(../img/social-icon/dribbble.png) no-repeat left bottom;
+    /*background: url(../img/social-icon/dribbble.png) no-repeat left bottom;*/
 }
 
 .flexslider {
@@ -2476,6 +2479,11 @@ div.comments-list:nth-child(even) {
 /* Landscape phones
 ------------------------- */
 @media (max-width: 480px) {
+	
+	.navbar .navbar-left{
+		display:none;
+		
+	}
 
 	h2 {
 		font-size: 24px;
@@ -2681,4 +2689,15 @@ div.comments-list:nth-child(even) {
 	margin:0 auto;
 	width:100%;
 	
+}
+.white{
+	color:#efefef;
+	margin-top:10px;
+	
+}
+.white:hover{
+	color:#efefef;
+	text-shadow:1px 1px 5px #efefef;
+	margin-top:10px;
+
 }

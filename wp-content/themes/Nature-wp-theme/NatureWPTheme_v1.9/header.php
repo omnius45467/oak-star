@@ -34,8 +34,8 @@ global $page, $paged;
                 <?php
                 query_posts('post_type=carousel_slider&posts_per_page=-1'); if( have_posts() ) : while( have_posts() ) : the_post(); global $post;
                     ?>
-<!--                    <div class="item --><?php //echo get_post_meta( $post->ID, '_cmb_first_slider_active_item', true ); ?><!--">-->
-                    <div class="item active">
+                    <div class="item <?php echo get_post_meta( $post->ID, '_cmb_first_slider_active_item', true ); ?>">
+<!--                    <div class="item active">-->
                         <div class="fill" style="background-image:url('<?php echo get_post_meta( $post->ID, '_cmb_h_slider_image', true ); ?>');">
                             <div class="container">
                                 <div class="carousel-caption">
@@ -54,17 +54,28 @@ global $page, $paged;
                 wp_reset_query();
                 ?>
             </div>
-<!--            <a class="left carousel-control" href="#homeCarousel" data-slide="prev">&lsaquo;</a>-->
-<!--            <a class="right carousel-control" href="#homeCarousel" data-slide="next">&rsaquo;</a>-->
+            <a class="left carousel-control" href="#homeCarousel" data-slide="prev">&lsaquo;</a>
+            <a class="right carousel-control" href="#homeCarousel" data-slide="next">&rsaquo;</a>
         </div>
         <!-- Home Slider end -->
         <!-- Navigation -->
         <nav class="navbar">
             <div class="navbar-inner">
                 <div class="main-nav">
+                    <ul class="navbar-left social" style="margin-right:43px;">
+                        <?php if(isset($nature_mt['twitter_url']) && $nature_mt['twitter_url'] != '') { ?>
+                            <li><a class="white fa fa-twitter-square fa-5x" href="<?php echo $nature_mt['twitter_url'];?>"></a></li>
+                        <?php } ?>
+                        <?php if(isset($nature_mt['facebook_url']) && $nature_mt['facebook_url'] != '') { ?>
+                            <li><a class="white fa fa-facebook-square fa-5x" href="<?php echo $nature_mt['facebook_url'];?>"></a></li>
+                        <?php } ?>
+                        <?php if(isset($nature_mt['rss_url']) && $nature_mt['rss_url'] != '') { ?>
+                            <li><a class="white fa fa-instagram fa-5x" href="<?php echo $nature_mt['rss_url'];?>"></a></li>
+                        <?php } ?>
+                    </ul>
                         <?php
                         if(isset($nature_mt['phone']) && $nature_mt['phone'] != '') {
-                            echo '<div class="pull-right number-box">';
+                            echo '<div class="navbar-right number-box">';
                             echo '<p class="shout">Call Us Today!</p><h2 class="phone-number"><a href="tel:';
                             echo $nature_mt['phone'];
                             echo '">';
