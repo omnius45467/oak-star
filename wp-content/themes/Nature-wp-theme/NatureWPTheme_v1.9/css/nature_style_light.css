@@ -73,7 +73,11 @@ p{
 .container{
 	width:100%;
 	margin:0 auto;
-	padding-left:70px;
+padding:0 auto;
+}
+#facility .container{
+	padding-left:-70px;
+
 }
  #container {
 	 margin:0 auto;
@@ -88,8 +92,8 @@ p{
 }
 
 #container-dm {
-	width:60%;
-	margin:0 auto;
+	width:100%;
+	/*margin:0 auto;*/
 	text-align:center;
 	
 }
@@ -299,7 +303,7 @@ a:hover {
 }
 .section-title h2 {
 	color:#7D7A73;
-	margin:0;
+
 	padding-bottom:20px;
 }
 .section-title h2 span {
@@ -825,7 +829,7 @@ background: #E0E4CB;
 .about-text{
 	font-family:'Lora', serif;
 	line-height:1.5em;
-	width:50%;
+	width:70%;
 	text-align: center;
 	margin:50px auto 100px;
 	/*padding-left:50px;*/
@@ -1545,7 +1549,7 @@ background: #E0E4CB;
 	/*background:url(../img/globe.png) no-repeat left 45px;*/
 }
 .contact-info {
-	margin:30px 0 100px 70px;
+	/*margin:30px 0 100px 70px;*/
 }
 .contact-info a {
 	color:#333;
@@ -2668,4 +2672,13 @@ div.comments-list:nth-child(even) {
 		right: 30%;
 	}
 
+}
+.video-title{
+	padding:10px;
+	
+}
+.google-maps-builder-wrap{
+	margin:0 auto;
+	width:100%;
+	
 }

@@ -33,15 +33,15 @@
         </div>
         <div class="row container">
             <?php endif; ?>
-            <div id="container" data-masonry-options='{ "columnWidth": 20, "itemSelector": ".event" }'>
+            <div id="container" data-masonry-options='{ "columnWidth": 40, "itemSelector": ".event" }'>
             <?php $src = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), array( 500,500 ), false, '' );?>
-            <div class="card-container event col-md-12 wow animated fadeInRight">
+            <div class="col-sm-12 col-md-3 col-lg-3 card-container event wow animated fadeInRight">
                 <div class="card">
                     <div class="front" style="background:url('<?php echo $src[0]; ?>') center no-repeat;">
                         <h2><?php the_title();?></h2>
 
                     </div>
-                    <div class="back">
+                    <div class="back" style="text-align:center; padding:auto;">
                         <h2><?php the_title();?></h2>
                         <?php the_content(); ?>
                     </div>

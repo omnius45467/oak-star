@@ -15,10 +15,12 @@
                 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 wow animated fadeIn">
                         <h6><?php the_content();?></h6>
                 </div>
-                <div class="address col-xs-12 col-sm-12 col-md-6 col-lg-6 wow animated fadeIn">
+            </div>
+            <div class="row container-fluid contact-centered">
+                <div class=" col-xs-12 col-sm-6 col-md-6 col-lg-6 wow animated fadeIn">
                     <?php echo do_shortcode('[contact]');?>
                 </div>
-                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 wow animated fadeIn">
+                <div class=" col-xs-12 col-sm-6 col-md-6 col-lg-6 wow animated fadeIn">
                     <?php echo do_shortcode('[google_maps id="361"]');?>
                 </div>
             </div>
