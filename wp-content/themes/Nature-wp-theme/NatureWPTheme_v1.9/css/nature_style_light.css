@@ -1032,7 +1032,7 @@ background: #E0E4CB;
 -------------------------------------------------- */
 .newsletter {
 	min-height:400px;
-	margin:100px -20px 0;
+	/*margin:100px -20px 0;*/
 	background:url(../img/horses.jpeg) no-repeat bottom center fixed;
 	background-size: cover !important;
 	border-bottom:9px solid #7D7A73;

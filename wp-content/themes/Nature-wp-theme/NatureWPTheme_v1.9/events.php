@@ -1,5 +1,5 @@
 <div class="container-fluid <?php echo $post->post_name;?>" id="<?php echo $post->post_name;?>">
-    <div class="row">
+    <div class="row container">
         <div class="section-title col-md-12 wow animated fadeIn">
             <h2><span><?php
                 $top_title = get_post_meta($post->ID, 'top_title', true);
@@ -27,10 +27,10 @@
 
     <?php if ($loopItr >= 4): $loopItr = 0; ?>
         </div>
-    <div class="row">
+    <div class="row container">
         <?php endif; ?>
 
-        <div class="event-ev col-sm-12 col-md-12 col-sm-offset-2 col-md-offset-0" >
+        <div class="event-ev col-sm-12 col-md-12 col-sm-offset-2 col-lg-12 col-md-offset-0 col-lg-offset-0" >
             
             <div class="col-sm-12 col-md-6">
                 <img title="<?php echo date('D. F jS, Y', types_render_field('event-date', array('output' => 'raw'))); ?>" class="wow animated bounceInUp event responsive" data-adaptive-background="1" data-ab-css-background="1" src=" <?php echo $src[0]; ?>" />

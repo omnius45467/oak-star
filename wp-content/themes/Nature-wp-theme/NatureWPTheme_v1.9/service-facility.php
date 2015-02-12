@@ -1,6 +1,6 @@
-<div class="container-fluid newsletter">
+<div class="row-fluid container-fluid newsletter">
 
-<div class="row <?php echo $post->post_name;?>" id="<?php echo $post->post_name;?>">
+<div class="row container <?php echo $post->post_name;?>" id="<?php echo $post->post_name;?>">
     <div class="section-title wow animated fadeIn">
         <h2>
             <span><?php $top_title = get_post_meta($post->ID, 'top_title', true);
@@ -9,7 +9,7 @@
         <p><?php echo get_post_meta( $post->ID, '_cmb_p_sub_title', true ); ?></p>
     </div>
 
-    <div class="row container-fluid">
+    <div class="row-fluid container">
     <?php
         $type = 'service';
         $args = array(
@@ -32,10 +32,11 @@
     ?>
     <?php if ($count >= 4): $count = 0; ?>
         </div>
-        <div class="row container-fluid">
+        <div class="row container">
     <?php endif; ?>
-    <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 service-item wow animated fadeIn" data-masonry-options='{ "columnWidth": 20, "itemSelector": ".service-item" }'>
-        <div id="container">
+    <div id="container">
+        <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 service-item wow animated fadeIn" data-masonry-options='{ "columnWidth": 20, "itemSelector": ".service-item" }'>
+        
             <img class="col-xs-12 col-sm-12 col-md-12 service-image" src="<?php echo $src[0]; ?>" alt="<?php the_title(); ?>" style="margin-bottom:25px;">
 
             <div class="col-xs-12 col-sm-12 col-md-12 service-text event" style="color:#333; margin-top:20px;">

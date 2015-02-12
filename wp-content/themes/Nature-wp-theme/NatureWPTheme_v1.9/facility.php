@@ -1,5 +1,5 @@
 <div class="container-fluid">
-<div class="row <?php echo $post->post_name;?>" id="<?php echo $post->post_name;?>">
+<div class="row-fluid <?php echo $post->post_name;?>" id="<?php echo $post->post_name;?>">
 
         <!-- Section Title -->
         <div class="section-title wow animated fadeIn">
@@ -12,7 +12,7 @@
         <!--End Section Title-->
 </div>
         <!--Content-->
-       <div class="row container">
+       <div class="row container col-lg-offset-2">
             <?php
 
             //get the event custom post types
@@ -31,7 +31,7 @@
                 ?>
             <?php if ($Count >= 3): $Count = 0; ?>
                 </div>
-                <div class="row container">
+                <div class="row-fluid container-fluid">
             <?php endif; ?>
             <div id="container" data-masonry-options='{ "columnWidth": 40, "itemSelector": ".event" }'>
             <?php $src = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), array( 500,500 ), false, '' );?>

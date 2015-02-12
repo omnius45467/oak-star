@@ -26,7 +26,7 @@ get_header(); ?>
         .<?php echo $post->post_name;?>
         {
             padding:100px 0 100px 0;
-            margin:0 auto;
+            margin:0;
 
         }
 
