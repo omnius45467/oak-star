@@ -38,7 +38,7 @@
             <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 card-container center-block event-fac wow animated fadeInRight">
                 <div class="card">
                     <div class="front" style="background:url('<?php echo $src[0]; ?>') center no-repeat;">
-                        <h2><?php the_title();?></h2>
+                        <h2 style="color:#efefef;"><?php the_title();?></h2>
                     </div>
                     <div class="back" style="text-align:center; padding:auto;">
                         <h2><?php the_title();?></h2>

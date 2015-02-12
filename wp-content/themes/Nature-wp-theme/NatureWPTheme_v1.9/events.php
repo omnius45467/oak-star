@@ -41,7 +41,7 @@
                 <?php the_content(); ?>
                 <h4><?php echo date('D. F jS, Y', types_render_field('event-date', array('output' => 'raw'))); ?></h4>
                 
-                <button class="btn"><a href = "<?php echo types_render_field('entry', array('output' => 'raw')); ?>"> Entry Form </a ></button>
+                <button class="btn"><a href = "<?php echo types_render_field('entry', array('output' => 'raw')); ?>"> Entry Form </a></button>
 
             </div>
             

@@ -27,10 +27,10 @@
                         <?php endif; ?>
                         
                         <?php foreach (get_oak_star_videos() as $video): ?>
-                            <div class="event well wow animated bounceInLeft col-xs-12 col-sm-12 col-md-4 col-lg-4" title="<?php echo ''.$video['desc'].'';?>" data-masonry-options='{ "columnWidth": 20, "itemSelector": ".event-dm" }'>
+                            <div class="event well wow animated bounceInLeft col-xs-12 col-sm-12 col-md-12 col-lg-12" title="<?php echo ''.$video['desc'].'';?>" data-masonry-options='{ "columnWidth": 20, "itemSelector": ".event" }'>
                                 <?php
                                 echo '<span class="video-title">';
-                                echo '<h4>' .$video['title']. '</h4>';
+                                echo '<h4 style="font-size:2em;">' .$video['title']. '</h4>';
                                 echo '</span>';
                                 echo '<span class="video-link">';
                                 ?>
