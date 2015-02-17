@@ -225,32 +225,3 @@ var options = {
     }
 };
 $(".card-container").on("hover").flip(options);
-
-
-
-//portfolio
-//var temp = "<li class='brick'></li>";
-//var w = 1, h = 1, html = '', limitItem = 49;
-//for (var i = 0; i < limitItem; ++i) {
-//    w = 1 + 3 * Math.random() << 0;
-//    html += temp.replace(/\{width\}/g, w*150).replace("{index}", i + 1);
-//}
-//$("#freewall").html(html);
-//
-//var wall = new freewall("#freewall");
-//wall.reset({
-//    selector: '.brick',
-//    animate: true,
-//    cellW: 150,
-//    cellH: 'auto',
-//    onResize: function() {
-//        wall.fitWidth();
-//    }
-//});
-//
-//var images = wall.container.find('.brick');
-//images.find('img').load(function() {
-//    wall.fitWidth();
-//});
-
-//new WOW().init();

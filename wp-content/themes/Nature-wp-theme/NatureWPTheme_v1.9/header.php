@@ -62,20 +62,20 @@ global $page, $paged;
         <nav class="navbar">
             <div class="navbar-inner">
                 <div class="main-nav">
-                    <ul class="navbar-left social" style="margin-right:43px;">
+                    <ul class="navbar-left social" >
                         <?php if(isset($nature_mt['twitter_url']) && $nature_mt['twitter_url'] != '') { ?>
-                            <li><a class="white fa fa-twitter-square fa-5x" href="<?php echo $nature_mt['twitter_url'];?>"></a></li>
+                            <li><a class="white fa fa-twitter-square fa-4x" href="<?php echo $nature_mt['twitter_url'];?>"></a></li>
                         <?php } ?>
                         <?php if(isset($nature_mt['facebook_url']) && $nature_mt['facebook_url'] != '') { ?>
-                            <li><a class="white fa fa-facebook-square fa-5x" href="<?php echo $nature_mt['facebook_url'];?>"></a></li>
+                            <li><a class="white fa fa-facebook-square fa-4x" href="<?php echo $nature_mt['facebook_url'];?>"></a></li>
                         <?php } ?>
                         <?php if(isset($nature_mt['rss_url']) && $nature_mt['rss_url'] != '') { ?>
-                            <li><a class="white fa fa-instagram fa-5x" href="<?php echo $nature_mt['rss_url'];?>"></a></li>
+                            <li><a class="white fa fa-instagram fa-4x" href="<?php echo $nature_mt['rss_url'];?>"></a></li>
                         <?php } ?>
                     </ul>
                         <?php
                         if(isset($nature_mt['phone']) && $nature_mt['phone'] != '') {
-                            echo '<div class="navbar-right number-box">';
+                            echo '<div class="navbar-right number-box" style="right:100px;margin:0;">';
                             echo '<p class="shout">Call Us Today!</p><h2 class="phone-number"><a href="tel:';
                             echo $nature_mt['phone'];
                             echo '">';
