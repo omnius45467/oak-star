@@ -14,7 +14,7 @@ if ( function_exists( 'pronamic_google_maps_mashup' ) ) {
 			'height'      => 800,
 			'map_options' => array(
 				// https://developers.google.com/maps/documentation/javascript/styling
-				// http://gmaps-samples-v3.googlecode.com/svn/trunk/styledmaps/wizard/index.html
+				// http://gmaps-samples-v3.googlecode.com/svn/trunk/styledmaps/wizard/temp.html
 				'styles' => array(
 					(object) array(
 						'featureType' => 'water',

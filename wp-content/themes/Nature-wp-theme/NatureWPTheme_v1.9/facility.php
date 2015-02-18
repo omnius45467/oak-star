@@ -41,12 +41,12 @@
             <div class="col-md-4 card-container center-block event-fac wow animated fadeIn">
                 <div class="card">
                     
-                    <div class="front" style="background:url('<?php echo $src[0]; ?>') center no-repeat;">
-                        <h2 style="color:#efefef;"><?php the_title();?></h2>
+                    <div class="front" style="background:url('<?php echo $src[0]; ?>')no-repeat;">
+                        <h1 style="color:#efefef;font-family: 'Rye'; font-size:35px;"><?php the_title();?></h1>
                     </div>
                     
                     <div class="back">
-                        <h3 style="text-align: center;"><?php the_title();?></h3>
+                        <h2 style="text-align: center;"><?php the_title();?></h2>
                         <span style="text-align: left;">
                            <?php the_content(); ?>
                         </span>
