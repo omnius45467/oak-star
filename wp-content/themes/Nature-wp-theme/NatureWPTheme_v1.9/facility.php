@@ -18,7 +18,9 @@
         </div>
         <!--Content-->
        <div class="container-fluid col-md-12">
-            <?php
+           
+          <?php
+          
             //get the event custom post types
             $type = 'facility';
             $args = array(
@@ -31,18 +33,20 @@
             $my_query = null;
             $my_query = new WP_Query($args);
             if ($my_query->have_posts()): while($my_query->have_posts()): $my_query->the_post();
-                ?>
+                
+          ?>
 
             <div id="container" style="margin:0 auto;">
             <?php $src = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), array( 500,500 ), false, '' );?>
             <div class="col-md-4 card-container center-block event-fac wow animated fadeIn">
                 <div class="card">
+                    
                     <div class="front" style="background:url('<?php echo $src[0]; ?>') center no-repeat;">
                         <h2 style="color:#efefef;"><?php the_title();?></h2>
-
                     </div>
+                    
                     <div class="back">
-                        <h3git  style="text-align: center;"><?php the_title();?></h3>
+                        <h3 style="text-align: center;"><?php the_title();?></h3>
                         <span style="text-align: left;">
                            <?php the_content(); ?>
                         </span>

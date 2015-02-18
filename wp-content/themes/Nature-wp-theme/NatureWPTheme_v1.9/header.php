@@ -126,7 +126,7 @@
         <!-- Navigation end -->
     </section>
 <!-- Home end -->
-<div id="main-content">   
+<div id="main-content">
 
   
     

@@ -9,7 +9,7 @@
         <div class="row-fluid">
             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" style="margin-top:60px;">
                 <span id="about-image" class="wow animated slideInLeft">
-                    <img class="special event col-xs-12 col-sm-12 col-md-6 col-lg-6" width="90%" src="<?php echo $src[0]; ?>" alt="<? the_title();?>"/>
+                    <img class="special event col-xs-12 col-sm-12 col-md-6 col-lg-6" width="80%" src="<?php echo $src[0]; ?>" alt="<? the_title();?>"/>
                 </span>
                 <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
                     <div class="about-text wow animated fadeInUp" data-adaptive-background="1" data-ab-css-background="1">
