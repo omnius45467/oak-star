@@ -17,8 +17,8 @@
                 <!--End Section Title-->
         </div>
         <!--Content-->
-       <div class="container-fluid col-md-12">
-           
+       <div class="container-fluid">
+           <div class="col-md-12">
           <?php
           
             //get the event custom post types
@@ -60,3 +60,4 @@
         <!--End Content-->
     </div>
 
+</div>
