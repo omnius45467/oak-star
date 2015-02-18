@@ -39,9 +39,10 @@
                 <div class="card">
                     <div class="front" style="background:url('<?php echo $src[0]; ?>') center no-repeat;">
                         <h2 style="color:#efefef;"><?php the_title();?></h2>
+
                     </div>
                     <div class="back">
-                        <h2 style="text-align: center;"><?php the_title();?></h2>
+                        <h3git  style="text-align: center;"><?php the_title();?></h3>
                         <span style="text-align: left;">
                            <?php the_content(); ?>
                         </span>
