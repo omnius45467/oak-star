@@ -9,7 +9,7 @@
                     <p><?php echo get_post_meta( $post->ID, '_cmb_p_sub_title', true ); ?></p>
                 </div>
             <div class="container-fluid" style="margin:0 auto;">
-                <div class="col-md-12">
+                <div class="col-md-8 col-md-offset-2">
                     <?php echo the_content();?>
                 </div>
 

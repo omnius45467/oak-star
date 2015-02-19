@@ -30,7 +30,7 @@
     <div class="row container">
         <?php endif; ?>
 
-        <div class="event-ev col-sm-12 col-md-12 col-sm-offset-2 col-lg-12 col-md-offset-0 col-lg-offset-0" >
+        <div class="col-sm-12 col-md-12 col-sm-offset-2 col-lg-12 col-md-offset-0 col-lg-offset-0" style="margin-bottom:40px;">
             
             <div class="col-sm-12 col-md-6">
                 <img title="<?php echo date('D. F jS, Y', types_render_field('event-date', array('output' => 'raw'))); ?>" class="wow animated fadeIn event responsive" data-adaptive-background="1" data-ab-css-background="1" src=" <?php echo $src[0]; ?>" />

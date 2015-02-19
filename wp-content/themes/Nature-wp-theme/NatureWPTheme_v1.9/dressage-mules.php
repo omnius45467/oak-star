@@ -11,7 +11,7 @@
             <p><?php echo get_post_meta( $post->ID, '_cmb_p_sub_title', true ); ?></p>
 
         </div>
-        <div class="col-md-12" style="padding:50px;">
+        <div class="col-md-8 col-md-offset-2" style="padding:50px;">
             <?php echo the_content();?>
         </div>
         <!--End Section Title-->

@@ -576,9 +576,11 @@ function mt_events_content($atts=array()) {
 		$projects_limage = $thumb['0'];
 		$projects .= '
 			<li class="animated fadeIn brick">
-				<a href="'.$projects_link.'" data-largesrc="'.$projects_limage.'" data-title="'.$project_title.'" data-description="'.$project_content.'">
+				<a title="Click For More Details" href="'.$projects_link.'" data-largesrc="'.$projects_limage.'" data-title="'.$project_title.'" data-description="'.$project_content.'">
 							'.$thumbnail.'
+<h3 style="position:absolute; text-align:center; background:#000; opacity:0.7; font-size:2em; width:100%; z-index:1000;bottom: 10px;height: 50px;padding: 10px; box-shadow:5px 5px 30px #333; text-shadow:#333 5px 5px 30px;">'.$project_title.'</h3>
 						</a>
+
 			</li>
 
 				';

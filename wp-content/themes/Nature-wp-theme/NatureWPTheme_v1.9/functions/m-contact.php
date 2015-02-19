@@ -13,8 +13,8 @@ Template name: Contact Page Template
                          Phone: <?php echo $nature_mt['phone'];?>
                      <?php } ?>
                      <br>
-                     <?php if(isset($nature_mt['fax']) && $nature_mt['fax'] != '') { ?>
-                         Fax: <?php echo $nature_mt['fax'];?>
+                     <?php if(isset($nature_mt['email']) && $nature_mt['email'] != '') { ?>
+                         Email: <?php echo $nature_mt['email'];?>
                      <?php } ?>
                      <br>
                      <?php if(isset($nature_mt['web']) && $nature_mt['web'] != '') { ?>
