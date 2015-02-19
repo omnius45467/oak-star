@@ -45,7 +45,6 @@ wp_enqueue_script( 'mobilemenu', get_template_directory_uri() . '/js/jquery.mobi
 wp_enqueue_script( 'prettyPhoto', get_template_directory_uri() . '/js/jquery.prettyPhoto.js', array('jquery'), false, true);
 wp_enqueue_script( 'scrollTo', get_template_directory_uri() . '/js/jquery.scrollTo.js', array('jquery'), false, true);
 
-
 wp_enqueue_script( 'flipcard', get_template_directory_uri() . '/js/flipcard.js', array('jquery'), false, true);
 
 wp_enqueue_script( 'validaytor', get_template_directory_uri() . '/js/jquery.ufvalidator-1.0.5.js', array('jquery'), false, true);

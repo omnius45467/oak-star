@@ -1,3 +1,6 @@
+.navbar {
+  font-size: 1em;
+}
 @media only screen and (min-width: 320px) and (max-width: 480px) {
   .about {
     padding: 0;
@@ -35,6 +38,9 @@
   .event-fac {
     left: 0px !important;
   }
+  .phone-number {
+    display: none;
+  }
 }
 @media only screen and (min-device-width: 800px) and (max-device-width: 1080px) {
   .navbar-left,
@@ -62,5 +68,8 @@
   }
   .phone-number {
     padding-right: 40px;
+  }
+  .navbar {
+    font-size: 1em;
   }
 }
