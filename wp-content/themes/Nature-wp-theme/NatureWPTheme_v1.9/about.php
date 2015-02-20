@@ -7,12 +7,13 @@
         <!--End Section Title-->
         <!--Content-->
         <div class="row-fluid">
-            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" style="margin-top:60px;">
+            <div class="container-fluid">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" style="margin-top:60px;">
                 <span id="about-image" class="wow animated slideInLeft">
-                    <img class="special event col-xs-12 col-sm-12 col-md-6 col-lg-6" width="80%" src="<?php echo $src[0]; ?>" alt="<? the_title();?>"/>
+                    <img class="special event col-xs-12 col-sm-12 col-md-6 col-lg-6" width="80%" style="left:-30px; margin-bottom:0;" src="<?php echo $src[0]; ?>" alt="<? the_title();?>"/>
                 </span>
-                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-                    <div class="about-text wow animated fadeInUp" data-adaptive-background="1" data-ab-css-background="1">
+                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                        <div class="about-text wow animated fadeInUp" data-adaptive-background="1" data-ab-css-background="1">
                         <span class="section-title">
                             <h2>
                             <span>
@@ -21,9 +22,10 @@
                             </span>
                             </h2>
                         </span>
-                        <p><?php echo get_post_meta( $post->ID, '_cmb_p_sub_title', true ); ?></p>
-                        <hr/>
-                        <?php the_content(); ?>
+                            <p><?php echo get_post_meta( $post->ID, '_cmb_p_sub_title', true ); ?></p>
+                            <hr/>
+                            <?php the_content(); ?>
+                        </div>
                     </div>
                 </div>
             </div>
