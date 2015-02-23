@@ -22,7 +22,7 @@
     $loopItr = 0;
     if ($loop->have_posts()): while ($loop->have_posts()): $loop->the_post();
     ?>
-        
+
         <?php $src = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), array( 500,500 ), false, '' );?>
 
     <?php if ($loopItr >= 4): $loopItr = 0; ?>
@@ -30,21 +30,21 @@
     <div class="row container">
         <?php endif; ?>
 
-        <div class="col-sm-12 col-md-12 col-sm-offset-2 col-lg-12 col-md-offset-0 col-lg-offset-0" style="margin-bottom:40px;">
-            
+        <div class="col-sm-12 col-md-12 col-sm-offset-2 col-lg-12 col-md-offset-2 col-lg-offset-0" style="margin-bottom:40px;">
+
             <div class="col-sm-12 col-md-6">
                 <img title="<?php echo date('D. F jS, Y', types_render_field('event-date', array('output' => 'raw'))); ?>" class="wow animated fadeIn event responsive" data-adaptive-background="1" data-ab-css-background="1" src=" <?php echo $src[0]; ?>" />
             </div>
-            
+
             <div class="col-sm-12 col-md-6 wow animated fadeIn">
                 <h2 title="<?php echo date('D. F jS, Y', types_render_field('event-date', array('output' => 'raw'))); ?>"><?php the_title(); ?></h2>
                 <?php the_content(); ?>
                 <h4><?php echo date('D. F jS, Y', types_render_field('event-date', array('output' => 'raw'))); ?></h4>
-                
+
                 <button class="btn"><a href = "<?php echo types_render_field('entry', array('output' => 'raw')); ?>"> Entry Form </a></button>
 
             </div>
-            
+
         </div>
         <?php $loopItr++; endwhile; endif; ?>
     </div>

@@ -1,4 +1,4 @@
-<div class="row-fluid ">
+<div class="row-fluid">
         <div class=" <?php echo $post->post_name;?>" id="<?php echo $post->post_name;?>">
                 <!-- Section Title -->
                 <div class="section-title wow animated fadeIn">
@@ -20,7 +20,7 @@
        <div class="container-fluid">
            <div class="col-md-12">
           <?php
-          
+
             //get the event custom post types
             $type = 'facility';
             $args = array(
@@ -33,20 +33,20 @@
             $my_query = null;
             $my_query = new WP_Query($args);
             if ($my_query->have_posts()): while($my_query->have_posts()): $my_query->the_post();
-                
+
           ?>
 
             <div id="container" style="margin:0 auto;">
             <?php $src = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), array( 500,500 ), false, '' );?>
             <div class="col-md-4 card-container center-block event-fac wow animated fadeIn">
                 <div class="card">
-                    
+
                     <div class="front" style="background:url('<?php echo $src[0]; ?>')no-repeat;">
                         <h1 style="color:#efefef;font-family: 'Rye'; font-size:35px;"><?php the_title();?></h1>
                     </div>
-                    
+
                     <div class="back">
-                        <h2 style="text-align: center;"><?php the_title();?></h2>
+                        <h3><?php the_title();?></h3>
                         <span style="text-align: left;">
                            <?php the_content(); ?>
                         </span>
@@ -57,6 +57,32 @@
         </div>
             <?php endwhile; endif; wp_reset_postdata(); ?>
         </div>
+           <div class="col-md-12">
+               <?php
+               $type = 'service';
+               $args = array(
+                   'post_type' => $type,
+                   'post_status' => 'publish',
+                   "title" => 'SERVICE TITLE',
+                   "text" => 'SERVICE DETAILS',
+                   "image" => 'SERVICE IMAGE',
+                   "url" => 'SERVICE BUTTON URL'
+
+               );
+
+               $my_query = null;
+               $my_query = new WP_Query($args);
+               if ($my_query->have_posts()): while($my_query->have_posts()): $my_query->the_post();
+
+
+                   ?>
+
+               <div class="col-md-6 col-md-offset-3 service-text" style="color:#333; margin-top:20px;">
+                   <h1 class="service-title" style="text-shadow:1px 1px 2px #333;"><span><?php the_title();?></span></h1>
+                   <?php the_content();?>
+               </div>
+               <?php endwhile; endif; wp_reset_postdata(); ?>
+           </div>
         <!--End Content-->
     </div>
 

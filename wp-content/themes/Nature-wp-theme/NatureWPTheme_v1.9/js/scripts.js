@@ -1,7 +1,7 @@
 $(function() {
-    //grid portfolio 
+    //grid portfolio
         Grid.init();
-        
+
 $(window).load(function() {
     $('#homeCarousel').carousel()
     $('#testimonialCarousel').carousel()
@@ -10,7 +10,7 @@ $(window).load(function() {
     });
     $('.post-featured-box .flexslider').flexslider({
         animation: "slide"
-    }); 
+    });
 });
 
 /* ---------- @ Scroll to Top -----------*/
@@ -38,15 +38,15 @@ subMenuDash: '&ndash;'
 });
 /* ---------- @ Contact From -----------*/
  $(document).ready(function ()
-{ 
+{
   $('#submit').formValidator({
     scope: '#form'
   });
-  
+
   $('#post-commentsss').formValidator({
     scope: '#comments-form'
   });
-  
+
   $('#submit,#post-commentsss').click(function() {
         $('input.error-input, textarea.error-input').delay(300).animate({marginLeft:0},100).animate({marginLeft:10},100).animate({marginLeft:0},100).animate({marginLeft:10},100);
     });
@@ -71,7 +71,7 @@ subMenuDash: '&ndash;'
       });
     }
   };
-  
+
 
   $('#form').submit(function() {
     $(this).ajaxSubmit(options);
@@ -81,11 +81,11 @@ subMenuDash: '&ndash;'
 
 /* ---------- @ Newsletter From -----------*/
  $(document).ready(function ()
-{ 
+{
   $('#n-submit').formValidator({
     scope: '#newsletter-form'
   });
-   
+
   $('#n-submit').click(function() {
         $('input.error-input, textarea.error-input').delay(300).animate({marginLeft:0},100).animate({marginLeft:10},100).animate({marginLeft:0},100).animate({marginLeft:10},100);
     });
@@ -97,7 +97,7 @@ subMenuDash: '&ndash;'
     beforeSubmit: function() {
       $('.sending').show();
 
-    }, 
+    },
     success: function() {
       $('.sending').hide();
       $('#newsletter-form').hide();
@@ -110,7 +110,7 @@ subMenuDash: '&ndash;'
       });
     }
   };
-  
+
 $('#newsletter-form').submit(function() {
     $(this).ajaxSubmit(options);
     return false;
@@ -143,7 +143,7 @@ $('#newsletter-form').submit(function() {
             callback:     function(box) {
                 // the callback is fired every time an animation is started
                 // the argument that is passed in is the DOM node being animated
-                
+
             }
         }
     )
@@ -225,3 +225,14 @@ var options = {
     }
 };
 $(".card-container").on("hover").flip(options);
+
+//more info section
+$('.adv-toggle-buttons span').each(function() {
+    $(this).on('click', function(){
+        $(this).parent().next().slideToggle();
+        $(this).parent().find('span').each(function(){
+            $(this).toggle();
+
+        });
+    });
+});
