@@ -38,21 +38,18 @@
                         ?>
 
 
-                        <div class="col-md-12">
+                        <div class="col-sm-12 col-md-12">
 
-                            <div class="col-md-6">
+                            <div class="col-sm-6 col-md-6 col-md-offset-0">
                                 <?php $src = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), array( 500,500 ), false, '' );?>
                                 <img class="event service-image" src="<?php echo $src[0] ?>" width="100%" alt=""/>
                             </div>
-                            <div class="col-md-6" style="text-align:left;">
+                            <div class="col-sm-6 col-md-6" style="text-align:left;">
                                 <h1 style="text-align:center;font-family:'Rye';font-size:35px;"><span><?php echo the_title();?></span></h1>
                                 <hr/>
                             </div>
-                            <p class="adv-toggle-buttons" style="padding-bottom:50px;">
-                                <span class="fa fa-chevron-down"> Read Bio</span>
-                                <span class="fa fa-chevron-up" style="display: none;"> Close Bio</span>
-                            </p>
-                            <div class="adv-unit-options" style="display: none; padding-bottom:50px;"> <?php echo the_content();?></div>
+
+                            <div class="col-md-6" style="padding-bottom:50px;"> <?php echo the_content();?> </div>
                         </div>
 
                     <?php endwhile; endif; wp_reset_postdata(); ?>
@@ -64,7 +61,7 @@
                             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" data-masonry-options='{ "columnWidth": 20, "itemSelector": ".event" }'>
                                 <?php
                                 echo '<span class="video-link col-md-12 col-sm-12 col-xs-12">';
-                                echo '<h2 class="video-title"style="color:#777;font-size:2em;"><span>' .$video['title']. '</span></h2>';
+                                echo '<h2 class="video-title"><span>' .$video['title']. '</span></h2>';
                                 ?>
                                 <iframe class="event-dm youtube-player" width="640" height="480" type="text/html" src="https://www.youtube.com/embed/<?php echo $video['link'] ?>" frameborder="0" allowFullScreen></iframe>
                                 <?php

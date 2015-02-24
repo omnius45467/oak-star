@@ -30,13 +30,13 @@
     <div class="row container">
         <?php endif; ?>
 
-        <div class="col-sm-12 col-md-12 col-sm-offset-2 col-lg-12 col-md-offset-2 col-lg-offset-0" style="margin-bottom:40px;">
+        <div class="col-md-12 col-offset-2" style="margin-bottom:40px;">
 
-            <div class="col-sm-12 col-md-6">
+            <div class="col-md-6 col-md-offset-0">
                 <img title="<?php echo date('D. F jS, Y', types_render_field('event-date', array('output' => 'raw'))); ?>" class="wow animated fadeIn event responsive" data-adaptive-background="1" data-ab-css-background="1" src=" <?php echo $src[0]; ?>" />
             </div>
 
-            <div class="col-sm-12 col-md-6 wow animated fadeIn">
+            <div class=" col-md-6">
                 <h2 title="<?php echo date('D. F jS, Y', types_render_field('event-date', array('output' => 'raw'))); ?>"><?php the_title(); ?></h2>
                 <?php the_content(); ?>
                 <h4><?php echo date('D. F jS, Y', types_render_field('event-date', array('output' => 'raw'))); ?></h4>

@@ -1,7 +1,7 @@
 <div class="row-fluid">
         <div class=" <?php echo $post->post_name;?>" id="<?php echo $post->post_name;?>">
                 <!-- Section Title -->
-                <div class="section-title wow animated fadeIn">
+                <div class="section-title ">
                     <h2>
                     <span><?php $top_title = get_post_meta($post->ID, 'top_title', true);
                         if($top_title != '') echo $top_title; else the_title();?></span>
@@ -9,7 +9,7 @@
                     <p><?php echo get_post_meta( $post->ID, '_cmb_p_sub_title', true ); ?></p>
                 </div>
             <div class="container-fluid" style="margin:0 auto;">
-                <div class="col-md-8 col-md-offset-2">
+                <div class="col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-4">
                     <?php echo the_content();?>
                 </div>
 
@@ -38,7 +38,7 @@
 
             <div id="container" style="margin:0 auto;">
             <?php $src = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), array( 500,500 ), false, '' );?>
-            <div class="col-md-4 card-container center-block event-fac wow animated fadeIn">
+            <div class="col-lg-4 col-lg-offset-2 card-container center-block event-fac">
                 <div class="card">
 
                     <div class="front" style="background:url('<?php echo $src[0]; ?>')no-repeat;">
@@ -57,6 +57,8 @@
         </div>
             <?php endwhile; endif; wp_reset_postdata(); ?>
         </div>
+       </div>
+    <div class="container-fluid">
            <div class="col-md-12">
                <?php
                $type = 'service';
@@ -77,13 +79,13 @@
 
                    ?>
 
-               <div class="col-md-6 col-md-offset-3 service-text" style="color:#333; margin-top:20px;">
+               <div class="col-sm-10 col-sm-offset-1 col-md-10 col-md-offset-1 service-text" style="color:#333; margin-top:20px;">
                    <h1 class="service-title" style="text-shadow:1px 1px 2px #333;"><span><?php the_title();?></span></h1>
                    <?php the_content();?>
                </div>
                <?php endwhile; endif; wp_reset_postdata(); ?>
            </div>
         <!--End Content-->
-    </div>
+  
 
 </div>

@@ -59,12 +59,23 @@
     left: 0px !important;
   }
 }
-@media only screen and (min-device-width: 1081px) and (max-device-width: 1280px) {
+@media only screen and (min-device-width: 1080px) and (max-device-width: 1179px) {
+  #facility .container {
+    padding-left: -70px;
+  }
+  .phone-number {
+    padding-right: 40px;
+  }
+  .navbar {
+    font-size: 1em;
+  }
+}
+@media only screen and (min-device-width: 1180px) and (max-device-width: 1280px) {
   #facility .container {
     padding-left: -70px;
   }
   .event-fac {
-    left: 50px;
+    left: 5%;
   }
   .phone-number {
     padding-right: 40px;

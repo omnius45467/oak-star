@@ -2686,6 +2686,8 @@ div.comments-list:nth-child(even) {
 }
 .video-title{
 	padding:10px;
+	color:#777;
+	font-size:2em;
 
 }
 .google-maps-builder-wrap{
