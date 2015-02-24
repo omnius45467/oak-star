@@ -8,7 +8,7 @@
                     if($top_title != '') echo $top_title; else the_title();?>
                 </span>
             </h2>
-            <p><?php echo get_post_meta( $post->ID, '_cmb_p_sub_title', true ); ?></p>
+            <p class="sub-title"><?php echo get_post_meta( $post->ID, '_cmb_p_sub_title', true ); ?></p>
 
         </div>
         <div class="col-md-8 col-md-offset-2" style="padding:50px;">
@@ -46,7 +46,7 @@
                             </div>
 
                             <div class="col-sm-8 col-md-8">
-                                <h1 style="text-align:center;font-family:'Rye';font-size:35px;"><span><?php echo the_title();?></span></h1>
+                                <h1 style="text-align:left;font-family:'Rye';font-size:25px;"><span><?php echo the_title();?></span></h1>
                                 <?php echo the_content();?>
                             </div>
                         </div>

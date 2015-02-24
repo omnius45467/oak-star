@@ -5,7 +5,7 @@
                 $top_title = get_post_meta($post->ID, 'top_title', true);
                 if($top_title != '') echo $top_title; else the_title();
                 ?></span></h2>
-            <p><?php echo get_post_meta( $post->ID, '_cmb_p_sub_title', true ); ?></p>
+            <p class="sub-title"><?php echo get_post_meta( $post->ID, '_cmb_p_sub_title', true ); ?></p>
         </div>
 
     <!--    //content-->
@@ -30,13 +30,12 @@
     <div class="row container">
         <?php endif; ?>
 
-        <div class="col-md-12 col-offset-2" style="margin-bottom:40px;">
-
-            <div class="col-sm-12 col-sm-offset-2 col-md-6 col-md-offset-0">
+        <div class="col-md-12 col-offset-0" style="margin-bottom:40px;">
+            <div class="event-image col-sm-10 col-md-6 col-md-offset-0">
                 <img title="<?php echo date('D. F jS, Y', types_render_field('event-date', array('output' => 'raw'))); ?>" class="wow animated fadeIn event responsive" data-adaptive-background="1" data-ab-css-background="1" src=" <?php echo $src[0]; ?>" />
             </div>
 
-            <div class="col-sm-12 col-sm-offset-0 col-md-6 col-md-offset-0">
+            <div class="event-content col-sm-12 col-sm-offset-0 col-md-6 col-md-offset-0">
                 <h2 title="<?php echo date('D. F jS, Y', types_render_field('event-date', array('output' => 'raw'))); ?>"><?php the_title(); ?></h2>
                 <?php the_content(); ?>
                 <h4><?php echo date('D. F jS, Y', types_render_field('event-date', array('output' => 'raw'))); ?></h4>

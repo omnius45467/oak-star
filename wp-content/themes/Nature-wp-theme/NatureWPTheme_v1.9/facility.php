@@ -6,10 +6,10 @@
                     <span><?php $top_title = get_post_meta($post->ID, 'top_title', true);
                         if($top_title != '') echo $top_title; else the_title();?></span>
                     </h2>
-                    <p><?php echo get_post_meta( $post->ID, '_cmb_p_sub_title', true ); ?></p>
+                    <p class="sub-title"><?php echo get_post_meta( $post->ID, '_cmb_p_sub_title', true ); ?></p>
                 </div>
             
-            <div class="container-fluid" style="margin:0 auto; padding-bottom:100px;">
+            <div class="container-fluid" style="margin:0 auto; padding-bottom:10px;">
                 <div class="col-sm-6 col-sm-offset-3 col-md-6 col-md-offset-3">
                     <?php echo the_content();?>
                 </div>

@@ -10,7 +10,7 @@
                     <br/>
                     <br/>
                     <?php if(isset($nature_mt['footer_text']) && $nature_mt['footer_text'] != '') { ?>
-                    <p>&copy;<?php echo $nature_mt['footer_text'];?></p>
+                    <p class="sub-title">&copy;<?php echo $nature_mt['footer_text'];?></p>
                     <?php } ?> 
                     <!-- Footer Social Icon -->
                     <ul class="social">

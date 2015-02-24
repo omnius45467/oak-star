@@ -6,7 +6,7 @@
             <span><?php $top_title = get_post_meta($post->ID, 'top_title', true);
                 if($top_title != '') echo $top_title; else the_title();?></span>
             </h2>
-            <p><?php echo get_post_meta( $post->ID, '_cmb_p_sub_title', true ); ?></p>
+            <p class="sub-title"><?php echo get_post_meta( $post->ID, '_cmb_p_sub_title', true ); ?></p>
         </div>
 
         <div class="row"><?php echo do_shortcode('[portfolio]');?></div>
