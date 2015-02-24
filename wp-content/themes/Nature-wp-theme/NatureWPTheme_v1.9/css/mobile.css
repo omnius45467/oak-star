@@ -74,6 +74,9 @@
   #facility .container {
     padding-left: -70px;
   }
+  .event-fac {
+    left: 2%;
+  }
   .phone-number {
     padding-right: 40px;
   }

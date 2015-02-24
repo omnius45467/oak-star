@@ -22,7 +22,7 @@
 
                     <br/>
 
-                    <div class="row container">
+                    <div class="row container" style="padding-bottom:10px;">
                         <?php
                         $type = 'bios';
                         $args = array(
@@ -38,18 +38,17 @@
                         ?>
 
 
-                        <div class="col-sm-12 col-md-12">
+                        <div class="col-sm-12 col-md-12" style="padding-bottom:100px;">
 
-                            <div class="col-sm-6 col-md-6 col-md-offset-0">
+                            <div class="col-sm-4 col-md-4 col-md-offset-0" style="padding-top:10px;">
                                 <?php $src = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), array( 500,500 ), false, '' );?>
                                 <img class="event service-image" src="<?php echo $src[0] ?>" width="100%" alt=""/>
                             </div>
-                            <div class="col-sm-6 col-md-6" style="text-align:left;">
-                                <h1 style="text-align:center;font-family:'Rye';font-size:35px;"><span><?php echo the_title();?></span></h1>
-                                <hr/>
-                            </div>
 
-                            <div class="col-md-6" style="padding-bottom:50px;"> <?php echo the_content();?> </div>
+                            <div class="col-sm-8 col-md-8">
+                                <h1 style="text-align:center;font-family:'Rye';font-size:35px;"><span><?php echo the_title();?></span></h1>
+                                <?php echo the_content();?>
+                            </div>
                         </div>
 
                     <?php endwhile; endif; wp_reset_postdata(); ?>
