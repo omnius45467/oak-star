@@ -9,7 +9,7 @@
                     <p><?php echo get_post_meta( $post->ID, '_cmb_p_sub_title', true ); ?></p>
                 </div>
             <div class="container-fluid" style="margin:0 auto;">
-                <div class="col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-4">
+                <div class="col-sm-6 col-sm-offset-3 col-md-6 col-md-offset-3">
                     <?php echo the_content();?>
                 </div>
 
@@ -38,7 +38,7 @@
 
             <div id="container" style="margin:0 auto;">
             <?php $src = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), array( 500,500 ), false, '' );?>
-            <div class="col-lg-4 col-lg-offset-2 card-container center-block event-fac">
+            <div class="col-lg-4 col-lg-offset-0 card-container center-block event-fac">
                 <div class="card">
 
                     <div class="front" style="background:url('<?php echo $src[0]; ?>')no-repeat;">

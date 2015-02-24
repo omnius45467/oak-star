@@ -48,7 +48,7 @@
     display: none;
   }
   #facility .container {
-    padding-left: -70px;
+    padding-left: -80px;
   }
   .about-text p {
     position: relative;
@@ -73,9 +73,6 @@
 @media only screen and (min-device-width: 1180px) and (max-device-width: 1280px) {
   #facility .container {
     padding-left: -70px;
-  }
-  .event-fac {
-    left: 5%;
   }
   .phone-number {
     padding-right: 40px;
