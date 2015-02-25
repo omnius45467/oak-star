@@ -45,9 +45,9 @@
                         <h1 style="font-size:35px;text-align:center; padding-left:0;color:#efefef;font-family: 'Rye';"><?php the_title();?></h1>
                     </div>
 
-                    <div class="back" style="padding:0;">
+                    <div class="back" style="margin:0;">
                         <h3><?php the_title();?></h3>
-                        <span style="text-align: left;margin:10px;font-size:12px;">
+                        <span style="text-align: left;font-size:10px;">
                            <?php the_content(); ?>
                         </span>
                     </div>
