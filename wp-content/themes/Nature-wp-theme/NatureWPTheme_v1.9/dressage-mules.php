@@ -38,7 +38,7 @@
                         ?>
 
 
-                        <div class="col-sm-12 col-md-12" style="padding-bottom:100px;">
+                        <div class="col-sm-12 col-md-12" style="padding-bottom:50px;">
 
                             <div class="col-sm-4 col-md-4 col-md-offset-0" style="padding-top:10px;">
                                 <?php $src = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), array( 500,500 ), false, '' );?>
