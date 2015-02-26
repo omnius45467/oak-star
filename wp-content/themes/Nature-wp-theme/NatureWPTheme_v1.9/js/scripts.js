@@ -236,3 +236,5 @@ $('.adv-toggle-buttons span').each(function() {
         });
     });
 });
+
+$('iframe').addClass(" event-dm");

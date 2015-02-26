@@ -62,12 +62,7 @@
                                 echo '<span class="video-link col-md-12 col-sm-12 col-xs-12">';
                                 echo '<h2 class="video-title"><span>' .$video['title']. '</span></h2>';
                                 ?>
-<!--                                <iframe class="event-dm youtube-player" width="640" height="480" type="text/html" src="https://www.youtube.com/embed/--><!--" frameborder="0" allowFullScreen></iframe>-->
                                 <?php echo $video['link'] ?>
-<!--                                    <iframe class="youtube-player" width="640" height="480" type="text/html" src="https://www.youtube.com/embed/H5mQ3MIbtc4" frameborder="0" allowFullScreen></iframe>-->
-                                <script>
-                                   jQuery('iframe').addClass(" event-dm");
-                                </script>
                                 <?php
                                 echo '</span>';
                                 echo '<br>';
