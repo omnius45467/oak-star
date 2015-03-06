@@ -17,7 +17,7 @@
         'post_status' => 'publish',
         'posts_per_page' => -1
     );
-
+    $entry = types_render_field('entry', array('output' => 'raw'));
     $loop = new WP_Query( $args );
     $loopItr = 0;
     if ($loop->have_posts()): while ($loop->have_posts()): $loop->the_post();
@@ -40,11 +40,21 @@
                 <?php the_content(); ?>
                 <h4><?php echo date('D. F jS, Y', types_render_field('event-date', array('output' => 'raw'))); ?></h4>
 
-                <button class="btn"><a href = "<?php echo types_render_field('entry', array('output' => 'raw')); ?>"> Entry Form </a></button>
+                <?php if(types_render_field('entry', array('output' => 'raw')) == null){
+                    echo '';
+                    
+                }else{
+                    ?>
+                    <button class="btn"><a href = "<?php echo types_render_field('entry', array('output' => 'raw')); ?>"> Entry Form </a></button>
+                   <?php
+                }
+                
+                ?>
+
 
             </div>
 
         </div>
-        <?php $loopItr++; endwhile; endif; ?>
+        <?php $loopItr++; endwhile; endif;?>
     </div>
 </div>
