@@ -123,4 +123,8 @@
   .about-title {
     margin-top: -100px;
   }
+  .row-fluid {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
 }

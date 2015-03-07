@@ -37,21 +37,22 @@
 
                         ?>
 
-
+                    <div class="row-fluid">
                         <div class="col-sm-12 col-md-12" style="padding-bottom:50px;">
 
-                            <div class="col-sm-4 col-md-4 col-md-offset-0" style="padding-top:10px;">
+                            <div class="col-sm-4 col-md-4 col-md-offset-0" style="padding-top:10px;margin-top:25px;">
                                 <?php $src = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), array( 500,500 ), false, '' );?>
                                 <img class="event service-image" src="<?php echo $src[0] ?>" width="100%" alt=""/>
                             </div>
 
-                            <div class="col-sm-8 col-md-8">
-                                <h1 style="text-align:left;font-family:'Rye';font-size:25px;"><span><?php echo the_title();?></span></h1>
+                            <div class="large-bio col-sm-8 col-md-8">
+                                <h1 style="text-align:left;font-family:'Rye';font-size:30px;"><span><?php echo the_title();?></span></h1>
                                 <?php echo the_content();?>
                             </div>
                         </div>
+                    </div>
 
-                    <?php endwhile; endif; wp_reset_postdata(); ?>
+                        <?php endwhile; endif; wp_reset_postdata(); ?>
                     </div>
 
                     <div class="row container">
