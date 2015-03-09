@@ -37,7 +37,7 @@
         
         <div class="logo">
             <?php if(isset($nature_mt['logo']) && $nature_mt['logo'] != '') { ?>
-                <img src="<?php echo $nature_mt['logo'];?>" alt="Logo">
+                <img src="<?php echo $nature_mt['logo'];?>" alt="Oak Star Ranch">
             <?php } ?>           
         </div>
         

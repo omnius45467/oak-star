@@ -36,9 +36,9 @@
 
           ?>
 
-            <div id="container" style="margin:0 auto;padding-left:20px;">
+            <div id="container" style="margin:0 auto;padding-left:10px;">
             <?php $src = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), array( 500,500 ), false, '' );?>
-            <div class="col-lg-3 col-lg-offset-1 card-container center-block event-fac">
+            <div class="col-lg-3 col-md-offset-1 card-container center-block event-fac">
                 <div class="card">
 
                     <div class="front" style="background:url('<?php echo $src[0]; ?>')no-repeat;">

@@ -60,6 +60,9 @@
   .event-fac {
     left: 0px !important;
   }
+  .shout {
+    display: none;
+  }
   .event-content {
     text-align: center;
   }
